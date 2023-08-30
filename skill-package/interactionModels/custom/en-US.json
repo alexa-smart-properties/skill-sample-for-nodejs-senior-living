@@ -1,0 +1,7060 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "your assistant",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "BloodPressureIntent",
+          "slots": [],
+          "samples": [
+            "i need my blood pressure checked",
+            "check my pressure",
+            "check my blood pressure",
+            "blood pressure taken",
+            "take blood pressure",
+            "help with blood pressure",
+            "what is my blood pressure",
+            "blood pressure",
+            "take my blood pressure",
+            "blood sugar",
+            "check my blood sugar",
+            "check my sugar",
+            "i need my blood sugar checked",
+            "i need my oxygen checked",
+            "i need my sugar checked",
+            "i need to check my sugar"
+          ]
+        },{
+          "name": "HelpFallIntent",
+          "slots": [],
+          "samples": [
+            "i\u0027m stuck",
+            "i fell and i can\u0027t get up",
+            "help i\u0027ve fallen",
+            "I\u0027ve fallen",
+            "I\u0027m stuck on the ground",
+            "I fell to the ground",
+            "I fell over",
+            "Help I fell down",
+            "I fell down",
+            "I fell and hurt myself",
+            "I fell",
+            "Please help i fell",
+            "I\u0027m falling",
+            "I tripped",
+            "I hurt myself falling",
+            "fallen",
+            "fell and can not get up",
+            "resident fell",
+            "someone fell",
+            "there has been a fall",
+            "help i fell",
+            "i have fallen",
+            "fell down",
+            "fell",
+            "fall"
+          ]
+        },
+        {
+          "name": "HelpGeneralIntent",
+          "slots": [],
+          "samples": [
+            "will you help me",
+            "please help me get dressed",
+            "i\u0027ve had an accident",
+            "i want help",
+            "i need something for me",
+            "i need help now",
+            "i need assistance",
+            "could you help me",
+            "can someone help me",
+            "ask for help",
+            "I need some help",
+            "Would you mind helping me",
+            "Please help me",
+            "I want assistance",
+            "I need your help",
+            "I need help",
+            "Can you help me",
+            "Can I get someone to help me",
+            "assistance",
+            "for some assistance",
+            "need aide",
+            "need aid",
+            "some help",
+            "need assistance",
+            "help please",
+            "please help",
+            "someone help",
+            "need some help",
+            "help me",
+            "help",
+            "need help"
+          ]
+        },
+        {
+          "name": "MaintenanceIntent",
+          "slots": [
+            {
+              "name": "Apartment_Item",
+              "type": "Apartment_Item"
+            },
+            {
+              "name": "Maintenance_Issue",
+              "type": "Maintenance_Issue"
+            },
+            {
+              "name": "Apartment_Location",
+              "type": "Apartment_Location"
+            },
+            {
+              "name": "Floor",
+              "type": "Floor_Number"
+            },
+            {
+              "name": "Direction",
+              "type": "Cardinal_Direction"
+            }
+          ],
+          "samples": [
+            "water is {Maintenance_Issue}",
+            "there is {Maintenance_Issue}",
+            "there is a {Maintenance_Issue}",
+            "there are ants in the {Apartment_Location}",
+            "my {Apartment_Item} {Maintenance_Issue}",
+            "the {Apartment_Item} {Maintenance_Issue}",
+            "the {Apartment_Item} is {Maintenance_Issue}",
+            "the {Apartment_Item} doesn\u0027t work",
+            "the {Apartment_Item} is not working",
+            "{Apartment_Item} {Maintenance_Issue}",
+            "my {Apartment_Item} is not working",
+            "my {Apartment_Item} doesn\u0027t work",
+            "i want the {Apartment_Item} {Maintenance_Issue}",
+            "i want a new {Apartment_Item}",
+            "i need the {Apartment_Item} {Maintenance_Issue}",
+            "i need more {Apartment_Item}",
+            "i need {Apartment_Item}",
+            "i need help with my {Apartment_Item}",
+            "i need a new {Apartment_Item}",
+            "i need a {Apartment_Item} {Maintenance_Issue}",
+            "i need a {Apartment_Item}",
+            "i need a {Maintenance_Issue}",
+            "i have ants in the {Apartment_Location}",
+            "i don\u0027t have {Maintenance_Issue}",
+            "a {Apartment_Item} is {Maintenance_Issue}",
+            "{Apartment_Item} is broken",
+            "{Apartment_Item} isn\u0027t working",
+            "My {Apartment_Item} isn\u0027t working",
+            "My {Apartment_Item} is broken",
+            "I cannot get my {Apartment_Item} to work",
+            "I can not get my {Apartment_Item} to work",
+            "I cant get my {Apartment_Item} to work",
+            "My {Apartment_Item} won\u0027t turn on",
+            "I can\u0027t get my {Apartment_Item} working",
+            "I can\u0027t get my {Apartment_Item} to work",
+            "I need my {Apartment_Item} {Maintenance_Issue}",
+            "{Maintenance_Issue} {Apartment_Item}",
+            "can\u0027t get my {Apartment_Item} {Maintenance_Issue}",
+            "want a {Apartment_Item} {Maintenance_Issue} {Apartment_Location}",
+            "need a {Apartment_Item} {Maintenance_Issue} {Apartment_Location}",
+            "want a {Apartment_Item} {Maintenance_Issue} ",
+            "need a {Apartment_Item} {Maintenance_Issue} ",
+            "there is no {Apartment_Item}",
+            "I have no {Apartment_Item}",
+            "{Maintenance_Issue} my {Apartment_Item}",
+            "I {Maintenance_Issue} my {Apartment_Item} ",
+            "my {Apartment_Item} is {Maintenance_Issue}",
+            "{Apartment_Location} is {Maintenance_Issue}",
+            "{Apartment_Item} will not {Maintenance_Issue}",
+            "{Apartment_Item} won\u0027t {Maintenance_Issue}",
+            "the {Apartment_Item} in the {Direction} {Apartment_Location} is {Maintenance_Issue}",
+            "the {Apartment_Item} on the {Floor} is {Maintenance_Issue}",
+            "my {Apartment_Location} {Apartment_Item} is {Maintenance_Issue}",
+            "{Apartment_Item} {Apartment_Location} {Maintenance_Issue}",
+            "the {Apartment_Item} in {Apartment_Location} {Maintenance_Issue}",
+            "the {Apartment_Item} in {Apartment_Location} is not {Maintenance_Issue}",
+            "the {Apartment_Item} in {Apartment_Location} is {Maintenance_Issue}",
+            "{Apartment_Item} is {Maintenance_Issue} in the {Apartment_Location}",
+            "{Apartment_Item} is {Maintenance_Issue}"
+          ]
+        },
+        {
+          "name": "MedicationIntent",
+          "slots": [
+            {
+              "name": "Medication_Route",
+              "type": "Medication_Route"
+            },
+            {
+              "name": "Medication_Name",
+              "type": "Medication_Name"
+            },
+            {
+              "name": "Medication_State",
+              "type": "Medication_State"
+            }
+          ],
+          "samples": [
+            "i need some pain medecin",
+            "i need payments",
+            "some {Medication_Name}",
+            "it\u0027s time for my {Medication_Name}",
+            "i\u0027m ready for my {Medication_Name}",
+            "i\u0027m in {Medication_Name}",
+            "i\u0027d like {Medication_Name}",
+            "i\u0027d like my {Medication_Name}",
+            "i would like {Medication_Name}",
+            "i want the {Medication_Name}",
+            "i want some {Medication_Name}",
+            "i want my {Medication_Name}",
+            "i want {Medication_Name}",
+            "i need the {Medication_Name}",
+            "i need some {Medication_Name}",
+            "i need my pain medison",
+            "i need my {Medication_Name} for pain",
+            "i need my {Medication_Name}",
+            "i need his {Medication_Name}",
+            "i need her {Medication_Name}",
+            "i need a {Medication_Name}",
+            "give me {Medication_Name}",
+            "bring my {Medication_Name}",
+            "bring the {Medication_Name}",
+            "bring me the {Medication_Name}",
+            "bring me my {Medication_Name}",
+            "bring me {Medication_Name}",
+            "any {Medication_Name}",
+            "a {Medication_Name}",
+            "{Medication_Name} is {Medication_State}",
+            "I\u0027m ready to take {Medication_Name}",
+            "ready to take {Medication_Name} ",
+            "I am ready for {Medication_Name}",
+            "I\u0027m ready for {Medication_Name}",
+            "I need more {Medication_Name}",
+            "I need {Medication_Name}",
+            "I need help taking {Medication_Name} ",
+            "take my {Medication_Name}",
+            "ready for my {Medication_Name}",
+            "ready for {Medication_Name}",
+            "{Medication_Name}",
+            "want {Medication_Name}",
+            "need {Medication_Name} ",
+            "help taking {Medication_Name} ",
+            "more {Medication_Name}",
+            "bring {Medication_Name}",
+            "need to {Medication_State} my {Medication_Name}",
+            "need {Medication_State} {Medication_Name}",
+            "my {Medication_Name} is {Medication_State}",
+            "need more {Medication_Name}",
+            "out of {Medication_Route}",
+            "out of {Medication_Name}",
+            "{Medication_Name} is out",
+            "{Medication_Name} refill",
+            "refill {Medication_Name}",
+            "{Medication_Name} is complete",
+            "{Medication_Name} is finished",
+            "{Medication_Route} is done",
+            "{Medication_Name} is done",
+            "take my {Medication_Route} {Medication_Name}",
+            "daughters {Medication_Name}",
+            "sons {Medication_Name}",
+            "my {Medication_Name}",
+            "her {Medication_Name}",
+            "his {Medication_Name}",
+            "her {Medication_Route} {Medication_Name}",
+            "his {Medication_Route} {Medication_Name}",
+            "bring more {Medication_Name}",
+            "need {Medication_Name} {Medication_Route}",
+            "time for my {Medication_Name} {Medication_Route}",
+            "time for my {Medication_Route} {Medication_Name}",
+            "ready for {Medication_Route} {Medication_Name}",
+            "ready for {Medication_Name} {Medication_Route}",
+            "{Medication_Name} {Medication_Route}",
+            "{Medication_Route} {Medication_Name}"
+          ]
+        },
+        {
+          "name": "MobilityIntent",
+          "slots": [
+            {
+              "name": "Mobility_Need",
+              "type": "Mobility_Need"
+            }
+          ],
+          "samples": [
+            "i want to go back to {Mobility_Need}",
+            "ask for help {Mobility_Need}",
+            "please help me to {Mobility_Need}",
+            "it\u0027s time to {Mobility_Need}",
+            "i\u0027m back in my room",
+            "i\u0027d like to {Mobility_Need}",
+            "i want to leave {Mobility_Need}",
+            "i want to get {Mobility_Need}",
+            "i need to {Mobility_Need}",
+            "i need to get {Mobility_Need}",
+            "i need help getting out of my {Mobility_Need}",
+            "i need help getting out of {Mobility_Need}",
+            "i need help leaving my {Mobility_Need}",
+            "i need help leaving {Mobility_Need}",
+            "i need help getting {Mobility_Need}",
+            "i am in bed",
+            "help me getting {Mobility_Need}",
+            "help me get {Mobility_Need}",
+            "for help {Mobility_Need}",
+            "ask for help getting {Mobility_Need}",
+            "I\u0027d like some {Mobility_Need} ",
+            "I want to {Mobility_Need} around",
+            "I want to {Mobility_Need}",
+            "i can\u0027t get into my {Mobility_Need}",
+            "{Mobility_Need}",
+            "want to {Mobility_Need}",
+            "need to {Mobility_Need}",
+            "i need help {Mobility_Need}",
+            "help with my {Mobility_Need}",
+            "help getting into my {Mobility_Need}",
+            "help getting into {Mobility_Need}",
+            "help reaching {Mobility_Need}",
+            "help with {Mobility_Need}",
+            "help getting {Mobility_Need}",
+            "can\u0027t get to the {Mobility_Need}",
+            "can\u0027t get to my {Mobility_Need}",
+            "can\u0027t reach {Mobility_Need}",
+            "get {Mobility_Need}",
+            "have help {Mobility_Need}",
+            "help {Mobility_Need}",
+            "help me to {Mobility_Need}",
+            "help me {Mobility_Need}",
+            "help out of {Mobility_Need}",
+            "i can\u0027t get out of my {Mobility_Need}",
+            "i can\u0027t {Mobility_Need}",
+            "need help {Mobility_Need}"
+          ]
+        },
+        {
+          "name": "PainIntent",
+          "slots": [
+            {
+              "name": "Body_Part",
+              "type": "Body_Part"
+            },
+            {
+              "name": "Pain_Type",
+              "type": "Pain_Type"
+            }
+          ],
+          "samples": [
+            "today i\u0027m in {Pain_Type}",
+            "tell the nurse i\u0027m in {Pain_Type}",
+            "tell the nurse i am in {Pain_Type}",
+            "tell the nurse i am a {Pain_Type}",
+            "tell my nurse that i am in {Pain_Type}",
+            "simon {Pain_Type}",
+            "please tell my nurse i\u0027m in {Pain_Type}",
+            "payment {Pain_Type}",
+            "on then {Pain_Type}",
+            "on the {Pain_Type}",
+            "on {Pain_Type}",
+            "on my {Pain_Type}",
+            "on in {Pain_Type}",
+            "on and {Pain_Type}",
+            "on a {Pain_Type}",
+            "i\u0027ve been {Pain_Type}",
+            "i\u0027ve been paid",
+            "it {Pain_Type} a lot",
+            "i\u0027m your {Pain_Type}",
+            "i\u0027m to {Pain_Type}",
+            "i\u0027m still in {Pain_Type}",
+            "i\u0027m not in {Pain_Type}",
+            "i\u0027m in {Pain_Type} again",
+            "i\u0027m in a lot of {Pain_Type}",
+            "i\u0027m {Pain_Type} a lot",
+            "i\u0027m heavy {Pain_Type}",
+            "i\u0027m having {Pain_Type}",
+            "i\u0027m having a {Pain_Type}",
+            "i\u0027m gonna {Pain_Type}",
+            "i\u0027m feeling {Pain_Type}",
+            "i\u0027m and {Pain_Type}",
+            "i\u0027m an {Pain_Type}",
+            "i\u0027m a {Pain_Type}",
+            "i want something for {Pain_Type}",
+            "i {Pain_Type}",
+            "i paid",
+            "i need something for {Pain_Type}",
+            "i need payment",
+            "i need {Pain_Type}",
+            "i need my {Pain_Type}",
+            "i need i\u0027m in {Pain_Type}",
+            "i meant {Pain_Type}",
+            "i mean {Pain_Type}",
+            "i make {Pain_Type}",
+            "i in {Pain_Type}",
+            "i human {Pain_Type}",
+            "i have {Pain_Type}",
+            "i have in {Pain_Type}",
+            "i have {Body_Part} {Pain_Type}",
+            "i have an {Pain_Type}",
+            "i have a {Pain_Type} in my {Body_Part}",
+            "i have a {Pain_Type} in {Body_Part}",
+            "i have a {Pain_Type}",
+            "i even {Pain_Type}",
+            "i am in paid",
+            "i am having {Pain_Type}",
+            "i am a {Pain_Type}",
+            "having {Pain_Type}",
+            "evan {Pain_Type}",
+            "can you tell my nurse i\u0027m in {Pain_Type}",
+            "bad {Pain_Type}",
+            "are you in {Pain_Type}",
+            "anything for {Pain_Type}",
+            "and {Pain_Type}",
+            "and in {Pain_Type}",
+            "and a {Pain_Type}",
+            "am {Pain_Type}",
+            "am in {Pain_Type}",
+            "a {Pain_Type}",
+            "it {Pain_Type}",
+            "{Pain_Type}",
+            "i am {Pain_Type}",
+            "i\u0027m {Pain_Type}",
+            "the {Pain_Type} won\u0027t go away",
+            "the {Pain_Type} won\u0027t stop",
+            "my {Pain_Type} will not stop",
+            "my {Pain_Type} won\u0027t stop",
+            "my {Body_Part} {Pain_Type}",
+            "{Body_Part} {Pain_Type}",
+            "i\u0027m in {Pain_Type}",
+            "{Body_Part} wound",
+            "burns in my {Body_Part}",
+            "{Body_Part} burns",
+            "{Body_Part} is killing me",
+            "{Body_Part} in pain",
+            "can not feel my {Body_Part}",
+            "pain in my {Body_Part}",
+            "{Body_Part} hurts",
+            "i\u0027m in pain",
+            "in pain",
+            "pain"
+          ]
+        },
+        {
+          "name": "RoomServiceIntent",
+          "slots": [
+            {
+              "name": "Meal_Type",
+              "type": "Meal_Type"
+            },
+            {
+              "name": "Delivery_Location",
+              "type": "Apartment_Location"
+            }
+          ],
+          "samples": [
+            "bring some water",
+            "i\u0027m thirsty",
+            "i\u0027m still hungry",
+            "i\u0027m starving",
+            "i\u0027m hungry",
+            "i\u0027d like to order {Meal_Type}",
+            "i want something to eat",
+            "i want some water",
+            "i want coffee",
+            "i want {Meal_Type}",
+            "i want a water",
+            "i need water",
+            "i need some water",
+            "i need more water",
+            "i need ice water",
+            "i need hot water",
+            "i need {Meal_Type}",
+            "i need a {Meal_Type}",
+            "i am so hungry",
+            "i am ready to order {Meal_Type}",
+            "i am hungry",
+            "i am finished eating",
+            "i am done with my tray",
+            "get me water",
+            "for water",
+            "can i order {Meal_Type}",
+            "can i get water",
+            "can i get some {Meal_Type}",
+            "bring me water",
+            "bring me some water",
+            "bring me some {Meal_Type}",
+            "bring me {Meal_Type}",
+            "bring me a {Meal_Type}",
+            "bring a {Meal_Type}",
+            "a water",
+            "a {Meal_Type}",
+            "i want room service",
+            "i need room service",
+            "have {Meal_Type} in {Delivery_Location}",
+            "have {Meal_Type} {Delivery_Location}",
+            "take {Meal_Type} {Delivery_Location}",
+            "take {Meal_Type} in {Delivery_Location}",
+            "deliver {Meal_Type} to my {Delivery_Location}",
+            "want {Meal_Type} delivered to my {Delivery_Location}",
+            "like {Meal_Type} delivered to my {Delivery_Location}",
+            "{Meal_Type} delivered to my {Delivery_Location}",
+            "take {Meal_Type} at {Delivery_Location}",
+            "want {Meal_Type} at {Delivery_Location}",
+            "like {Meal_Type} at {Delivery_Location} ",
+            "have {Meal_Type} in my {Delivery_Location} ",
+            "eat {Meal_Type} at {Delivery_Location} ",
+            "{Meal_Type} at {Delivery_Location}",
+            "have {Meal_Type} at {Delivery_Location}",
+            "eat {Meal_Type} in my {Delivery_Location}",
+            "I would like {Meal_Type}",
+            "I would like a {Meal_Type}",
+            "I would like a {Meal_Type} tray",
+            "eat {Meal_Type} in my apartment",
+            "eat {Meal_Type} in my room",
+            "I will take {Meal_Type} in my room",
+            "I will take {Meal_Type} in my home",
+            "I will take {Meal_Type} in my apartment",
+            "I will take {Meal_Type} in my suite",
+            "i want a {Meal_Type} tray",
+            "I want a {Meal_Type}",
+            "I need my {Meal_Type} delivered",
+            "have food brought up",
+            "order food",
+            "order room service",
+            "order {Meal_Type}",
+            "{Meal_Type} tray",
+            "bring {Meal_Type}",
+            "room service",
+            "room tray",
+            "eat {Meal_Type} at home",
+            "i want {Meal_Type} in my room",
+            "{Meal_Type} brought to my room",
+            "i want water",
+            "i would like hot tea",
+            "i would like some hot tea",
+            "i would like some tea",
+            "i would like some water",
+            "i would like tea",
+            "i would like water",
+            "i\u0027d like some water"
+          ]
+        },
+        {
+          "name": "TalkIntent",
+          "slots": [
+            {
+              "name": "Role_Name",
+              "type": "Role_Name"
+            },
+            {
+              "name": "First_Name",
+              "type": "AMAZON.FirstName"
+            },
+            {
+              "name": "Apartment_Location",
+              "type": "Apartment_Location"
+            }
+          ],
+          "samples": [
+            "tell the {Role_Name}",
+            "{Role_Name}",
+            "my {Role_Name}",
+            "i\u0027d like to see {Role_Name}",
+            "i need to talk to the {Role_Name}",
+            "i need to talk to {Role_Name}",
+            "i need to speak with {Role_Name}",
+            "i need to see {Role_Name}",
+            "i need {Role_Name} in {Apartment_Location}",
+            "i need {Role_Name} in my {Apartment_Location}",
+            "i have a question",
+            "come to the room",
+            "come to room",
+            "come see me",
+            "come into the room",
+            "come in the room",
+            "come in my room",
+            "come in here",
+            "can i see the {Role_Name} now",
+            "can i see the {Role_Name}",
+            "can i see my {Role_Name} now",
+            "can i see my {Role_Name}",
+            "can i see {Role_Name} now",
+            "can i see {Role_Name}",
+            "i need my {Role_Name}",
+            "i need {First_Name}",
+            "i need {Role_Name}",
+            "i need an {Role_Name}",
+            "i need the {Role_Name}",
+            "I need a {Role_Name} ",
+            "i want to speak to {First_Name}",
+            "i want to speak to {Role_Name}",
+            "i\u0027d like to talk to {First_Name}",
+            "i\u0027d like to talk to {Role_Name}",
+            "i would like to talk to {Role_Name}",
+            "I want to talk to {First_Name}",
+            "I want to talk to my {Role_Name}",
+            "I want to talk to {Role_Name}",
+            "I want my {Role_Name}",
+            "have {Role_Name} come to my {Apartment_Location}",
+            "talk to my {Role_Name}",
+            "{Role_Name} come to my {Apartment_Location}",
+            "{Role_Name} come to my suite",
+            "{Role_Name} come to my apartment",
+            "see my {First_Name}",
+            "see my {Role_Name}",
+            "see {First_Name}",
+            "see {Role_Name}",
+            "speak to {Role_Name}",
+            "want my {Role_Name}",
+            "i want {Role_Name}",
+            "i want {First_Name}",
+            "bring {First_Name} here",
+            "have {First_Name} come here",
+            "speak to {First_Name}",
+            "talk to {First_Name}",
+            "{Role_Name} come to my home",
+            "{Role_Name} come to my room",
+            "have {Role_Name} come here",
+            "talk to {Role_Name}",
+            "come here",
+            "come to my room"
+          ]
+        },
+        {
+          "name": "ToiletingIntent",
+          "slots": [
+            {
+              "name": "Bathroom_Location",
+              "type": "Bathroom_Location"
+            },
+            {
+              "name": "Bathroom_Need",
+              "type": "Bathroom_Need"
+            }
+          ],
+          "samples": [
+            "the {Bathroom_Location}",
+            "please bring me a {Bathroom_Need}",
+            "i\u0027m going to the {Bathroom_Location}",
+            "i\u0027d like to go to the {Bathroom_Location}",
+            "i would like to go to the {Bathroom_Location}",
+            "i want to go to the {Bathroom_Location}",
+            "i wanna go to the {Bathroom_Location}",
+            "i need to use the {Bathroom_Location}",
+            "i need to {Bathroom_Need}",
+            "i need to go to the {Bathroom_Location}",
+            "i need to go to {Bathroom_Location}",
+            "i need the {Bathroom_Location}",
+            "i need help with {Bathroom_Location}",
+            "i need help to the {Bathroom_Location}",
+            "i need help going to the {Bathroom_Location}",
+            "i need a {Bathroom_Need}",
+            "i have to use the {Bathroom_Location}",
+            "i have to {Bathroom_Need}",
+            "i have to go to the {Bathroom_Location}",
+            "i am ready to go to the {Bathroom_Location}",
+            "have to use the {Bathroom_Location}",
+            "can i go to the {Bathroom_Location}",
+            "someone to bring me a {Bathroom_Need} ",
+            "I would like someone to bring me a {Bathroom_Need}",
+            " help using the {Bathroom_Location}",
+            "I would like help using the {Bathroom_Location}",
+            "i want a {Bathroom_Need}",
+            "I need someone to help me go to the {Bathroom_Location}",
+            "I need help using the {Bathroom_Location} ",
+            "I need a hand going to the {Bathroom_Location}",
+            "Could someone help me with the {Bathroom_Location}",
+            "Can someone bring me to the {Bathroom_Location} ",
+            "Can someone bring me a {Bathroom_Need}",
+            "bring me a {Bathroom_Need}",
+            "go to the {Bathroom_Location}",
+            "need to {Bathroom_Need}",
+            "help me to {Bathroom_Location}",
+            "help me with {Bathroom_Need}",
+            "{Bathroom_Location}",
+            "{Bathroom_Need} in the {Bathroom_Location}",
+            "help to the {Bathroom_Location}",
+            "need to use the {Bathroom_Location}",
+            "{Bathroom_Need}"
+          ]
+        },
+        {
+          "name": "CalendarEventInfoIntent",
+          "slots": [
+            {
+              "name": "Date",
+              "type": "AMAZON.DATE"
+            }
+          ],
+          "samples": [
+            "if there\u0027s an outing {Date}",
+            "if there\u0027s an outing this {Date}",
+            "is there an outing this {Date}",
+            "if there is an outing this {Date}",
+            "what activities are on {Date}",
+            "what are the activities on {Date}",
+            "what events are on {Date}",
+            "are there any more activities {Date}",
+            "what are the upcoming events",
+            "activity schedule for {Date}",
+            "are there any activities",
+            "are there any activities {Date}",
+            "are there any classes",
+            "are there any classes {Date}",
+            "are there any events",
+            "are there any events {Date}",
+            "are there any groups",
+            "are there any groups {Date}",
+            "are there any programs",
+            "are there any programs {Date}",
+            "events {Date}",
+            "what activities are {Date}",
+            "what activities are on the calendar",
+            "what activities are on the calendar {Date}",
+            "what are {Date} activities",
+            "what are {Date} events",
+            "what are {Date} programs",
+            "what are the activities {Date}",
+            "what are the classes {Date}",
+            "what are the events {Date}",
+            "what are the groups {Date}",
+            "what are the programs {Date}",
+            "what classes are {Date}",
+            "what classes are on the calendar",
+            "what classes are on the calendar {Date}",
+            "what events are {Date}",
+            "what events are on the calendar",
+            "what events are on the calendar {Date}",
+            "what groups are {Date}",
+            "what groups are on the calendar",
+            "what groups are on the calendar {Date}",
+            "what is going on",
+            "what is going on {Date}",
+            "what is happening",
+            "what is happening {Date}",
+            "what is on the calendar",
+            "what is on the calendar {Date}",
+            "what is on the calendar for {Date}",
+            "what is the activity schedule this {Date}",
+            "what kind of stuff is on the calendar",
+            "what kind of stuff is on the calendar {Date}",
+            "what kind of things are on the calendar",
+            "what kind of things are on the calendar {Date}",
+            "what programs are {Date}",
+            "what programs are on the calendar",
+            "what programs are on the calendar {Date}",
+            "what stuff is on the calendar",
+            "what stuff is on the calendar {Date}",
+            "what\u0027s going on",
+            "what\u0027s going on {Date}",
+            "whats happening",
+            "what\u0027s happening",
+            "whats happening {Date}",
+            "what\u0027s happening {Date}",
+            "whats happening on {Date}",
+            "what\u0027s on the calendar",
+            "what\u0027s on the calendar {Date}",
+            "what\u0027s on the calendar for {Date}"
+          ]
+        },
+        {
+          "name": "MenuInfoIntent",
+          "slots": [
+            {
+              "name": "MenuItemCategory",
+              "type": "Menu_Item"
+            },
+            {
+              "name": "Meal",
+              "type": "Meal_Type"
+            },
+            {
+              "name": "Time",
+              "type": "AMAZON.DATE"
+            },
+            {
+              "name": "MenuItemAspect",
+              "type": "Menu_Item_Type"
+            },
+            {
+              "name": "Menu_Type",
+              "type": "Menu_Type"
+            }
+          ],
+          "samples": [
+            "what are today\u0027s {Menu_Type}",
+            "what are the {Menu_Type}",
+            "tell me {Time} {Menu_Type}",
+            "tell me the {Menu_Type} ",
+            "read me the {Menu_Type}",
+            "what are the {MenuItemCategory} of the {Menu_Type} {Time}",
+            "what are the {MenuItemCategory} of the {Menu_Type}",
+            "what is the {MenuItemCategory} of the {Menu_Type} {Time}",
+            "what is the {MenuItemCategory} of the {Menu_Type}",
+            "what\u0027s the {Menu_Type} {MenuItemCategory} {Time}",
+            "what\u0027s the {Menu_Type} {MenuItemCategory}",
+            "whats the {Menu_Type} {MenuItemCategory} {Time}",
+            "whats the {Menu_Type} {MenuItemCategory}",
+            "what is the {Menu_Type} {MenuItemCategory} {Time}",
+            "what is the {Menu_Type} {MenuItemCategory}",
+            "{Menu_Type} {MenuItemCategory} {Time}",
+            "{Menu_Type} {MenuItemCategory} is for {Meal} {Time}",
+            "{Menu_Type} {MenuItemCategory} on the menu for {Meal} {Time}",
+            "tell me about the {Menu_Type} {MenuItemCategory} for {Meal} {Time}",
+            "is {Menu_Type} {MenuItemCategory} for {Meal} {Time}",
+            "is there {Menu_Type} {MenuItemCategory} on the {Meal} menu {Time}",
+            "tell me about {Menu_Type} {MenuItemCategory} for {Meal}",
+            "tell me about the {Menu_Type} {MenuItemCategory}",
+            "tell me about the {Menu_Type} {MenuItemCategory} for {Meal}",
+            "what are {Menu_Type} {MenuItemCategory} for {Meal}",
+            "what are the {Menu_Type} {MenuItemCategory} for {Meal}",
+            "what are the {Menu_Type} {MenuItemCategory} for {Meal} {Time}",
+            "when are we going to have {Menu_Type} {MenuItemCategory}",
+            "when are we going to have {Menu_Type} {MenuItemCategory} next",
+            "when is {Menu_Type} {MenuItemCategory} {Meal}",
+            "what {Menu_Type} {MenuItemCategory} are for {Meal} {Time}",
+            "tell me about {Menu_Type} {MenuItemCategory} ",
+            "what are the {Menu_Type} {MenuItemCategory}",
+            "what are the {Menu_Type} {MenuItemCategory} {Time}",
+            "what are the {Menu_Type} {Time}",
+            "what are the {Menu_Type} {Meal}",
+            "what are the {Menu_Type} {MenuItemAspect} {Meal}",
+            "{Meal} {Time}",
+            "{MenuItemCategory} is for {Meal} {Time}",
+            "{MenuItemCategory} on the menu for {Meal} {Time}",
+            "are there any {MenuItemAspect} options",
+            "are there any {MenuItemAspect} options for {Meal}",
+            "are there any {MenuItemAspect} options for {Time} {Meal}",
+            "Is {MenuItemCategory} for {Meal} {Time}",
+            "Is there {MenuItemCategory} on the {Meal} menu {Time}",
+            "tell me about {MenuItemCategory} for {Meal}",
+            "tell me about the {MenuItemCategory}",
+            "tell me about the {MenuItemCategory} for {Meal}",
+            "what are {MenuItemCategory} for {Meal}",
+            "what are the {MenuItemAspect} foods",
+            "what are the {MenuItemAspect} items",
+            "what are the {MenuItemAspect} on todays {Meal}",
+            "what are the {MenuItemCategory} for {Meal}",
+            "what are the {MenuItemCategory} for {Meal} {Time}",
+            "What are we going to have for {Meal}",
+            "what is {Meal}",
+            "what is {Meal} {Time}",
+            "what is {Time} {Meal} menu",
+            "What is for {Meal}",
+            "what is for {Meal} {Time}",
+            "what is on {Time} {Meal} menu",
+            "What is on the {Meal} menu",
+            "what is on the menu",
+            "whats {Time} {Meal} menu",
+            "what\u0027s {Time} {Meal} menu",
+            "What\u0027s for {Meal}",
+            "What\u0027s for {Meal} {Time}",
+            "whats on {Time} {Meal} menu",
+            "what\u0027s on {Time} {Meal} menu",
+            "What\u0027s on the {Meal} menu",
+            "what\u0027s on the menu",
+            "What\u0027s on the menu for {Meal}",
+            "What\u0027s on the menu for {Meal} {Time}",
+            "when are we going to have {MenuItemCategory}",
+            "when are we going to have {MenuItemCategory} next",
+            "when is {MenuItemCategory} {Meal}",
+            "what is the menu",
+            "give me the menu",
+            "menu for {Meal}",
+            "{Meal} menu",
+            "dining menu",
+            "menu",
+            "for {Time} {Meal}",
+            "what {MenuItemCategory} are for {Meal} {Time}",
+            "tell me about {MenuItemCategory} ",
+            "What\u0027s on the {Meal} menu {Time} "
+          ]
+        },
+        {
+          "name": "MenuTimeIntent",
+          "slots": [
+            {
+              "name": "Meal",
+              "type": "Meal_Type"
+            },
+            {
+              "name": "Time",
+              "type": "AMAZON.DATE"
+            }
+          ],
+          "samples": [
+            "when is {Meal} seating",
+            "when is seating for {Meal}",
+            "when can i eat {Meal}",
+            "did i miss {Meal}",
+            "i want to know what time {Meal} is",
+            "how long until {Meal}",
+            "when is {Meal} finished",
+            "when is {Meal} closed",
+            "when is {Meal} over",
+            "when is {Meal} done",
+            "when is {Meal} available",
+            "when is {Meal} open",
+            "when is {Meal} starting",
+            "what time is {Time} {Meal} served",
+            "when does {Meal} begin",
+            "when does {Meal} start",
+            "when is {Meal}",
+            "when is {Meal} offered",
+            "when is {Meal} served",
+            "what time is {Meal}",
+            "when is {Time} {Meal}",
+            "what time is {Time} {Meal}",
+            "when is {Meal} {Time}",
+            "what time is {Meal} {Time}",
+            "what time is {Meal} served"
+          ]
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        },
+        {
+          "name": "accessibilityservices",
+          "slots": [],
+          "samples": [
+            "tell me about accessibility services",
+            "are there any accessibility services",
+            "what are the accessibility services ",
+            "what accessibility services exist",
+            "what accessible services or specialty services are available"
+          ]
+        },
+        {
+          "name": "ServicesIntent",
+          "slots": [],
+          "samples": [
+            "what services are available",
+            "about services",
+            "i have services questions",
+            "i have questions about what services are offered",
+            "i have questions about services",
+            "services"
+          ]
+        },
+        {
+          "name": "StartMyDayIntent",
+          "slots": [],
+          "samples": [
+            "what is on my schedule",
+            "what should I do",
+            "give me my schedule",
+            "give me my schedule for today",
+            "what should I do today",
+            "what is on my schedule today",
+            "start my day"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "entertainment",
+                "synonyms": [
+                  "something to do",
+                  "some entertainment"
+                ]
+              }
+            },
+            {
+              "id": "sudoku",
+              "name": {
+                "value": "sudoku"
+              }
+            },
+            {
+              "id": "Puzzle",
+              "name": {
+                "value": "Puzzle"
+              }
+            },
+            {
+              "id": "Crossword",
+              "name": {
+                "value": "Crossword",
+                "synonyms": [
+                  "crossword puzzle",
+                  "cross word"
+                ]
+              }
+            },
+            {
+              "id": "Wordsearch",
+              "name": {
+                "value": "Word search"
+              }
+            },
+            {
+              "id": "Game",
+              "name": {
+                "value": "Game"
+              }
+            },
+            {
+              "id": "Packofcards",
+              "name": {
+                "value": "Pack of cards",
+                "synonyms": [
+                  "cards",
+                  "deck of cards"
+                ]
+              }
+            },
+            {
+              "id": "Solitaire",
+              "name": {
+                "value": "Solitaire"
+              }
+            },
+            {
+              "id": "Craft",
+              "name": {
+                "value": "Craft"
+              }
+            },
+            {
+              "id": "Wool",
+              "name": {
+                "value": "Wool"
+              }
+            },
+            {
+              "id": "Yarn",
+              "name": {
+                "value": "Yarn"
+              }
+            },
+            {
+              "id": "Jigsawpuzzle",
+              "name": {
+                "value": "Jigsaw puzzle",
+                "synonyms": [
+                  "jigsaw"
+                ]
+              }
+            },
+            {
+              "id": "Triviagame",
+              "name": {
+                "value": "Trivia game",
+                "synonyms": [
+                  "trivia"
+                ]
+              }
+            },
+            {
+              "id": "Newspaper",
+              "name": {
+                "value": "Newspaper"
+              }
+            },
+            {
+              "id": "Book",
+              "name": {
+                "value": "Book"
+              }
+            },
+            {
+              "id": "Magazine",
+              "name": {
+                "value": "Magazine"
+              }
+            },
+            {
+              "id": "PencilCrayons",
+              "name": {
+                "value": "Pencil Crayons",
+                "synonyms": [
+                  "colored pencils",
+                  "crayons"
+                ]
+              }
+            },
+            {
+              "id": "Colouringbook",
+              "name": {
+                "value": "Colouring book"
+              }
+            }
+          ],
+          "name": "Activity_Type"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "blood"
+              }
+            },
+            {
+              "name": {
+                "value": "blood pressure"
+              }
+            },
+            {
+              "name": {
+                "value": "clinic"
+              }
+            },
+            {
+              "name": {
+                "value": "walker"
+              }
+            },
+            {
+              "name": {
+                "value": "hearing aide"
+              }
+            },
+            {
+              "name": {
+                "value": "hearing aid"
+              }
+            },
+            {
+              "name": {
+                "value": "foot care"
+              }
+            }
+          ],
+          "name": "Clinic_Type"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "PSW",
+                "synonyms": [
+                  "p.s.w.",
+                  "p. s. w."
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "family",
+                "synonyms": [
+                  "child",
+                  "kid",
+                  "god son",
+                  "god dauther",
+                  "grand daughter",
+                  "grand son",
+                  "grandson",
+                  "cousin",
+                  "sister",
+                  "brother",
+                  "husband",
+                  "wife",
+                  "daughter",
+                  "son"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "doctor",
+                "synonyms": [
+                  "my doctor",
+                  "p. c. p.",
+                  "physician"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "nurse assistant",
+                "synonyms": [
+                  "cna",
+                  "c. n. a.",
+                  "certified nurse assistant"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "him"
+              }
+            },
+            {
+              "name": {
+                "value": "her",
+                "synonyms": [
+                  "them",
+                  "they"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "coordinator"
+              }
+            },
+            {
+              "name": {
+                "value": "care giver",
+                "synonyms": [
+                  "care coordinator"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "care team",
+                "synonyms": [
+                  "careteam"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "someone",
+                "synonyms": [
+                  "anyone",
+                  "someone"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "wellness station"
+              }
+            },
+            {
+              "name": {
+                "value": "therapist"
+              }
+            },
+            {
+              "name": {
+                "value": "resident care partner",
+                "synonyms": [
+                  "care giver",
+                  "caregiver",
+                  "care partner"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "front desk",
+                "synonyms": [
+                  "concierge"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "maintenance",
+                "synonyms": [
+                  "repair man",
+                  "handy man",
+                  "maintenance coordinator"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "life enrichment coordinator",
+                "synonyms": [
+                  "enrichment coordinator",
+                  "life enrichment"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "wound care nurse",
+                "synonyms": [
+                  "wound nurse"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "med tech",
+                "synonyms": [
+                  "medical technician"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "nurse",
+                "synonyms": [
+                  "my nurse",
+                  "nursing team",
+                  "nursing staff",
+                  "nursing",
+                  "registered nurse",
+                  "r. n. "
+                ]
+              }
+            }
+          ],
+          "name": "Role_Name"
+        },
+        {
+          "values": [
+            {
+              "id": "KIND_BRUNCH",
+              "name": {
+                "value": "brunch"
+              }
+            },
+            {
+              "id": "KIND_SNACK",
+              "name": {
+                "value": "snack",
+                "synonyms": [
+                  "midnight snack",
+                  "morning snack",
+                  "evening snack",
+                  "afternoon snack",
+                  "snacks"
+                ]
+              }
+            },
+            {
+              "id": "KIND_UNSPECIFIED",
+              "name": {
+                "value": "food",
+                "synonyms": [
+                  "meals",
+                  "my meal",
+                  "our meal",
+                  "grub",
+                  "eat",
+                  "chow",
+                  "eat",
+                  "meal",
+                  "foods"
+                ]
+              }
+            },
+            {
+              "id": "KIND_DINNER",
+              "name": {
+                "value": "dinner",
+                "synonyms": [
+                  "evening meal",
+                  "suppers",
+                  "supper",
+                  "dinners"
+                ]
+              }
+            },
+            {
+              "id": "KIND_LUNCH",
+              "name": {
+                "value": "lunch",
+                "synonyms": [
+                  "luncheon",
+                  "smorgasboard",
+                  "have lunch",
+                  "light lunch",
+                  "mid day meal",
+                  "midday meal",
+                  "lunches"
+                ]
+              }
+            },
+            {
+              "id": "KIND_BREAKFAST",
+              "name": {
+                "value": "breakfast",
+                "synonyms": [
+                  "breakfasts",
+                  "brake fast",
+                  "morning meal",
+                  "brunch"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "room service",
+                "synonyms": [
+                  "food delivered"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "meal tray",
+                "synonyms": [
+                  "breakfast tray",
+                  "dinner tray",
+                  "lunch tray",
+                  "dining tray"
+                ]
+              }
+            }
+          ],
+          "name": "Meal_Type"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "cousin",
+                "synonyms": [
+                  "cousins",
+                  "my cousin"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "niece",
+                "synonyms": [
+                  "my nephew",
+                  "my niece",
+                  "nephew"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "grandchild",
+                "synonyms": [
+                  "grandchildren",
+                  "grand children",
+                  "grandchild",
+                  "grand child",
+                  "my grand daughter",
+                  "grand daughter",
+                  "my granddaughter",
+                  "granddaughter",
+                  "my grand son",
+                  "grand son",
+                  "my grandson",
+                  "grandson"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "child",
+                "synonyms": [
+                  "my kid",
+                  "kid",
+                  "my child"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "partner",
+                "synonyms": [
+                  "my domestic partner",
+                  "domestic partner",
+                  "my partner"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "mother",
+                "synonyms": [
+                  "my mother"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "father",
+                "synonyms": [
+                  "my father"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "family",
+                "synonyms": [
+                  "the family",
+                  "my family"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "sister",
+                "synonyms": [
+                  "my sister"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "brother",
+                "synonyms": [
+                  "my brother"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "husband",
+                "synonyms": [
+                  "my husband"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "wife",
+                "synonyms": [
+                  "my wife"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "daughter in law"
+              }
+            },
+            {
+              "name": {
+                "value": "son in law"
+              }
+            },
+            {
+              "name": {
+                "value": "daughter",
+                "synonyms": [
+                  "my daughter"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "son",
+                "synonyms": [
+                  "my son"
+                ]
+              }
+            }
+          ],
+          "name": "Family_Member"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "stairwell"
+              }
+            },
+            {
+              "name": {
+                "value": "fireplace"
+              }
+            },
+            {
+              "name": {
+                "value": "closet"
+              }
+            },
+            {
+              "name": {
+                "value": "cupboard",
+                "synonyms": [
+                  "pantry"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "sink",
+                "synonyms": [
+                  "faucet"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "bed",
+                "synonyms": [
+                  "our bed",
+                  "the bed",
+                  "my bed",
+                  "in bed"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "wall",
+                "synonyms": [
+                  "in the wall",
+                  "on the wall"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "washroom",
+                "synonyms": [
+                  "wash room"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "bedrooms",
+                "synonyms": [
+                  "bed rooms",
+                  "bed room",
+                  "bedroom"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "guest room"
+              }
+            },
+            {
+              "name": {
+                "value": "front door"
+              }
+            },
+            {
+              "name": {
+                "value": "room",
+                "synonyms": [
+                  "in the room",
+                  "my room"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "apartment",
+                "synonyms": [
+                  "home",
+                  "the suite",
+                  "the house",
+                  "the apartment",
+                  "condo",
+                  "house",
+                  "my house",
+                  "my suite",
+                  "my home",
+                  "my apartment",
+                  "loft",
+                  "studio",
+                  "home",
+                  "suite"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "master bed",
+                "synonyms": [
+                  "main bedroom",
+                  "master",
+                  "master bedroom"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "cabinet",
+                "synonyms": [
+                  "cabinets",
+                  "cabinet door",
+                  "cabinetry"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "doors"
+              }
+            },
+            {
+              "name": {
+                "value": "door",
+                "synonyms": [
+                  "at the door"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "foyer",
+                "synonyms": [
+                  "entry way",
+                  "entryway",
+                  "entrance"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "rug",
+                "synonyms": [
+                  "on the rug"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "window",
+                "synonyms": [
+                  "my windows",
+                  "my window",
+                  "windows"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "carpet",
+                "synonyms": [
+                  "on the carpet"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "floor",
+                "synonyms": [
+                  "on the floor"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "kitchen",
+                "synonyms": [
+                  "my kitchen",
+                  "in the kitchen"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "hallway",
+                "synonyms": [
+                  "in the hallway"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "dining room"
+              }
+            },
+            {
+              "name": {
+                "value": "sitting room"
+              }
+            },
+            {
+              "name": {
+                "value": "bathroom",
+                "synonyms": [
+                  "in the bathroom"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "living room",
+                "synonyms": [
+                  "in the living room",
+                  "front room"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "bedroom",
+                "synonyms": [
+                  "in the bedroom",
+                  "bed room"
+                ]
+              }
+            }
+          ],
+          "name": "Apartment_Location"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "booth",
+                "synonyms": [
+                  "window booth",
+                  "corner booth"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "dining",
+                "synonyms": [
+                  "dining reservation",
+                  "breakfast reservation",
+                  "lunch reservation",
+                  "dinner reservation",
+                  "dining reservation"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "private room",
+                "synonyms": [
+                  "private table"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "dining table",
+                "synonyms": [
+                  "dinner table",
+                  "table for lunch",
+                  "table for dinner",
+                  "lunch table"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "table",
+                "synonyms": [
+                  "window table",
+                  "corner table",
+                  "a table"
+                ]
+              }
+            }
+          ],
+          "name": "Dining_Reservation_Type"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "medication",
+                "synonyms": [
+                  "pills",
+                  "drugs",
+                  "prescription"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "hearing aid",
+                "synonyms": [
+                  "hearing aide"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "glasses",
+                "synonyms": [
+                  "spectacles",
+                  "bifocals"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "ring"
+              }
+            },
+            {
+              "name": {
+                "value": "bracelet"
+              }
+            },
+            {
+              "name": {
+                "value": "necklace"
+              }
+            },
+            {
+              "name": {
+                "value": "earrings"
+              }
+            },
+            {
+              "name": {
+                "value": "jewelry"
+              }
+            },
+            {
+              "name": {
+                "value": "cash"
+              }
+            },
+            {
+              "name": {
+                "value": "A. T. M. Card",
+                "synonyms": [
+                  "atm card"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "debit card"
+              }
+            },
+            {
+              "name": {
+                "value": "credit card"
+              }
+            },
+            {
+              "name": {
+                "value": "key card",
+                "synonyms": [
+                  "keycard"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "room key"
+              }
+            },
+            {
+              "name": {
+                "value": "car keys"
+              }
+            },
+            {
+              "name": {
+                "value": "money"
+              }
+            },
+            {
+              "name": {
+                "value": "laptop"
+              }
+            },
+            {
+              "name": {
+                "value": "cell phone"
+              }
+            },
+            {
+              "name": {
+                "value": "iphone"
+              }
+            },
+            {
+              "name": {
+                "value": "phone"
+              }
+            },
+            {
+              "name": {
+                "value": "purse"
+              }
+            },
+            {
+              "name": {
+                "value": "wallet"
+              }
+            },
+            {
+              "name": {
+                "value": "keys"
+              }
+            }
+          ],
+          "name": "Lost_Items"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "furniture",
+                "synonyms": [
+                  "dresser",
+                  "bed",
+                  "sofa",
+                  "chairs",
+                  "table",
+                  "couch",
+                  "chair"
+                ]
+              }
+            },
+
+            {
+              "name": {
+                "value": "battery",
+                "synonyms": [
+                  "aa batteries",
+                  "aaa batteries",
+                  "batteries"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "air filters",
+                "synonyms": [
+                  "air filter"
+                ]
+              }
+            },
+            {
+              "id": "fan",
+              "name": {
+                "value": "fan",
+                "synonyms": [
+                  "fans",
+                  "ceiling fan"
+                ]
+              }
+            },
+            {
+              "id": "lights",
+              "name": {
+                "value": "lights",
+                "synonyms": [
+                  "light bulbs",
+                  "bulb",
+                  "light bulb",
+                  "light",
+                  "lamp",
+                  "lamps"
+                ]
+              }
+            },
+            {
+              "id": "hvac",
+              "name": {
+                "value": "air conditioning",
+                "synonyms": [
+                  "my a. c.",
+                  "air conditioner",
+                  "a. c.",
+                  "heating",
+                  "heater",
+                  "heat",
+                  "thermostat",
+                  "air vent",
+                  "central heating",
+                  "central air",
+                  "cooling system",
+                  "heating system"
+                ]
+              }
+            },
+            {
+              "id": "acpan",
+              "name": {
+                "value": "AC Pan"
+              }
+            },
+            {
+              "id": "safe",
+              "name": {
+                "value": "safe",
+                "synonyms": [
+                  "lock box",
+                  "lockbox"
+                ]
+              }
+            },
+            {
+              "id": "handsanitizerdispenser",
+              "name": {
+                "value": "hand sanitizer dispenser",
+                "synonyms": [
+                  "hand dispenser",
+                  "hand sanitizer",
+                  "sanitizer dispenser"
+                ]
+              }
+            },
+            {
+              "id": "soapdispenser",
+              "name": {
+                "value": "soap dispenser",
+                "synonyms": [
+                  "liquid soap dispenser",
+                  "foam soap dispenser",
+                  "lotion dispenser",
+                  "shampoo dispenser",
+                  "conditioner dispenser"
+                ]
+              }
+            },
+            {
+              "id": "shower",
+              "name": {
+                "value": "shower",
+                "synonyms": [
+                  "bath",
+                  "tub",
+                  "bath tub"
+                ]
+              }
+            },
+            {
+              "id": "key",
+              "name": {
+                "value": "key",
+                "synonyms": [
+                  "door key",
+                  "door card",
+                  "key card",
+                  "keys",
+                  "house keys",
+                  "suite keys"
+                ]
+              }
+            },
+            {
+              "id": "mailkey",
+              "name": {
+                "value": "mail key",
+                "synonyms": [
+                  "mail keys",
+                  "mailbox key",
+                  "mailbox keys"
+                ]
+              }
+            },
+            {
+              "id": "radio",
+              "name": {
+                "value": "radio"
+              }
+            },
+            {
+              "id": "alexa",
+              "name": {
+                "value": "alexa",
+                "synonyms": [
+                  "pull cord",
+                  "pendant",
+                  "alexa machine"
+                ]
+              }
+            },
+            {
+              "id": "sink",
+              "name": {
+                "value": "sink",
+                "synonyms": [
+                  "hot water",
+                  "faucet",
+                  "water tap"
+                ]
+              }
+            },
+            {
+              "id": "drain",
+              "name": {
+                "value": "drain",
+                "synonyms": [
+                  "shower drain",
+                  "bath drain",
+                  "tub drain"
+                ]
+              }
+            },
+            {
+              "id": "garburator",
+              "name": {
+                "value": "garburator",
+                "synonyms": [
+                  "disposal",
+                  "sink disposal"
+                ]
+              }
+            },
+            {
+              "id": "curtainrod",
+              "name": {
+                "value": "curtain rod",
+                "synonyms": [
+                  "shower rod"
+                ]
+              }
+            },
+            {
+              "id": "showerhead",
+              "name": {
+                "value": "shower head"
+              }
+            },
+            {
+              "id": "stopper",
+              "name": {
+                "value": "stopper",
+                "synonyms": [
+                  "shower stopper",
+                  "bathtub stopper"
+                ]
+              }
+            },
+            {
+              "id": "fridge",
+              "name": {
+                "value": "fridge",
+                "synonyms": [
+                  "ice box",
+                  "cold storage",
+                  "cooler"
+                ]
+              }
+            },
+            {
+              "id": "refrigerator",
+              "name": {
+                "value": "refrigerator"
+              }
+            },
+            {
+              "id": "freezer",
+              "name": {
+                "value": "freezer"
+              }
+            },
+            {
+              "id": "powerchair",
+              "name": {
+                "value": "power chair",
+                "synonyms": [
+                  "chair"
+                ]
+              }
+            },
+            {
+              "id": "internet",
+              "name": {
+                "value": "internet",
+                "synonyms": [
+                  "internet connection",
+                  "wi-fi",
+                  "modem"
+                ]
+              }
+            },
+            {
+              "id": "phone",
+              "name": {
+                "value": "phone",
+                "synonyms": [
+                  "telephone"
+                ]
+              }
+            },
+            {
+              "id": "window",
+              "name": {
+                "value": "window",
+                "synonyms": [
+                  "windows"
+                ]
+              }
+            },
+            {
+              "id": "curtain",
+              "name": {
+                "value": "curtain",
+                "synonyms": [
+                  "blinds",
+                  "shades",
+                  "curtains"
+                ]
+              }
+            },
+            {
+              "id": "tv",
+              "name": {
+                "value": "t. v."
+              }
+            },
+            {
+              "id": "teevee",
+              "name": {
+                "value": "tee vee"
+              }
+            },
+            {
+              "id": "television",
+              "name": {
+                "value": "television",
+                "synonyms": [
+                  "flatscreen",
+                  "telly",
+                  "display",
+                  "monitor",
+                  "screen",
+                  "tv"
+                ]
+              }
+            },
+            {
+              "id": "dvdplayer",
+              "name": {
+                "value": "dvd player"
+              }
+            },
+            {
+              "id": "towelrack",
+              "name": {
+                "value": "towel rack"
+              }
+            },
+            {
+              "id": "toilet",
+              "name": {
+                "value": "toilet"
+              }
+            },
+            {
+              "id": "toiletriser",
+              "name": {
+                "value": "toilet riser"
+              }
+            },
+            {
+              "id": "toilethandle",
+              "name": {
+                "value": "toilet handle"
+              }
+            },
+            {
+              "id": "toiletseat",
+              "name": {
+                "value": "toilet seat"
+              }
+            },
+            {
+              "id": "doorhandle",
+              "name": {
+                "value": "door handle",
+                "synonyms": [
+                  "door knob"
+                ]
+              }
+            },
+            {
+              "id": "stove",
+              "name": {
+                "value": "stove",
+                "synonyms": [
+                  "stove top",
+                  "gas range",
+                  "electric range",
+                  "range"
+                ]
+              }
+            },
+            {
+              "id": "oven",
+              "name": {
+                "value": "oven",
+                "synonyms": [
+                  "oven"
+                ]
+              }
+            },
+            {
+              "id": "microwave",
+              "name": {
+                "value": "microwave",
+                "synonyms": [
+                  "microwave oven"
+                ]
+              }
+            },
+            {
+              "id": "toaster",
+              "name": {
+                "value": "toaster",
+                "synonyms": [
+                  "toaster oven",
+                  "small oven"
+                ]
+              }
+            },
+            {
+              "id": "windowscreen",
+              "name": {
+                "value": "window screen",
+                "synonyms": [
+                  "screen on window"
+                ]
+              }
+            },
+            {
+              "id": "alarm",
+              "name": {
+                "value": "alarm",
+                "synonyms": [
+                  "smoke alarm"
+                ]
+              }
+            },
+            {
+              "id": "pipeundersink",
+              "name": {
+                "value": "pipe under sink"
+              }
+            },
+            {
+              "id": "pipe",
+              "name": {
+                "value": "pipe"
+              }
+            },
+            {
+              "id": "hook",
+              "name": {
+                "value": "hook"
+              }
+            },
+            {
+              "id": "frontdoor",
+              "name": {
+                "value": "front door"
+              }
+            },
+            {
+              "id": "plug",
+              "name": {
+                "value": "plug"
+              }
+            },
+            {
+              "id": "gasflumes",
+              "name": {
+                "value": "gas flumes",
+                "synonyms": [
+                  "gas fumes"
+                ]
+              }
+            },
+            {
+              "id": "wheelchair",
+              "name": {
+                "value": "wheelchair",
+                "synonyms": [
+                  "wheel chair"
+                ]
+              }
+            },
+            {
+              "id": "ceilinglight",
+              "name": {
+                "value": "ceiling light"
+              }
+            },
+            {
+              "id": "backsplash",
+              "name": {
+                "value": "backsplash"
+              }
+            },
+            {
+              "id": "carpet",
+              "name": {
+                "value": "carpet"
+              }
+            },
+            {
+              "id": "fridgedoor",
+              "name": {
+                "value": "fridge door"
+              }
+            },
+            {
+              "id": "closetdoor",
+              "name": {
+                "value": "closet door"
+              }
+            },
+            {
+              "id": "towelhandle",
+              "name": {
+                "value": "towel handle"
+              }
+            },
+            {
+              "id": "toiletpaperholder",
+              "name": {
+                "value": "toilet paper holder"
+              }
+            },
+            {
+              "id": "airvent",
+              "name": {
+                "value": "air vent",
+                "synonyms": [
+                  "a. c. vent"
+                ]
+              }
+            },
+            {
+              "id": "slats",
+              "name": {
+                "value": "slats"
+              }
+            },
+            {
+              "id": "cupboarddoor",
+              "name": {
+                "value": "cupboard door"
+              }
+            },
+            {
+              "id": "showerheadholder",
+              "name": {
+                "value": "shower head holder"
+              }
+            },
+            {
+              "id": "tvremote",
+              "name": {
+                "value": "t. v. remote"
+              }
+            },
+            {
+              "id": "poweroutlet",
+              "name": {
+                "value": "power outlet"
+              }
+            },
+            {
+              "id": "screendoor",
+              "name": {
+                "value": "screen door"
+              }
+            },
+            {
+              "id": "cable",
+              "name": {
+                "value": "cable"
+              }
+            },
+            {
+              "id": "directtv",
+              "name": {
+                "value": "direct t. v."
+              }
+            },
+            {
+              "id": "netflix",
+              "name": {
+                "value": "netflix"
+              }
+            },
+            {
+              "id": "hulu",
+              "name": {
+                "value": "hulu"
+              }
+            }
+          ],
+          "name": "Apartment_Item"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "not responding",
+                "synonyms": [
+                  "going off",
+                  "beeping",
+                  "can not respond",
+                  "can\u0027t respond",
+                  "not respond",
+                  "will not respond",
+                  "won\u0027t respond"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "move",
+                "synonyms": [
+                  "moving",
+                  "moved"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "hung",
+                "synonyms": [
+                  "hung up",
+                  "hanged"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "install",
+                "synonyms": [
+                  "installed"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "changed",
+                "synonyms": [
+                  "swapped out",
+                  "exchanged",
+                  "replace",
+                  "change",
+                  "swap",
+                  "swapped",
+                  "replaced"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "empty",
+                "synonyms": [
+                  "drained",
+                  "drained",
+                  "not full",
+                  "not fill",
+                  "unfilled"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "won\u0027t stop",
+                "synonyms": [
+                  "is not working",
+                  "isn\u0027t working",
+                  "won\u0027t turn on",
+                  "can not be turned off",
+                  "can\u0027t be turned off",
+                  "can not turn off",
+                  "can\u0027t turn off",
+                  "not coming off",
+                  "won\u0027t turn off",
+                  "not turning off",
+                  "will not turn off",
+                  "won\u0027t quit",
+                  "won\u0027t turn off"
+                ]
+              }
+            },
+            {
+              "id": "broken",
+              "name": {
+                "value": "broken",
+                "synonyms": [
+                  "is broken",
+                  "is breaking",
+                  "breaking",
+                  "break",
+                  "broke",
+                  "busted",
+                  "doesn\u0027t work",
+                  "won\u0027t work"
+                ]
+              }
+            },
+            {
+              "id": "notworking",
+              "name": {
+                "value": "isnotworking",
+                "synonyms": [
+                  "can not be turned on",
+                  "can\u0027t be turned on",
+                  "can not turn on",
+                  "can\u0027t turn on",
+                  "can\u0027t turn on ",
+                  "not coming on",
+                  "won\u0027t turn on",
+                  "not turning on",
+                  "will not turn on",
+                  "not working",
+                  "is not working",
+                  "isn\u0027t working",
+                  "do not work",
+                  "don\u0027t work",
+                  "will not work",
+                  "won\u0027t work",
+                  "doesn\u0027t work",
+                  "does not work",
+                  "to work",
+                  "not working",
+                  "is not working",
+                  "isn\u0027t working"
+                ]
+              }
+            },
+            {
+              "id": "out",
+              "name": {
+                "value": "out",
+                "synonyms": [
+                  "burnt out",
+                  "burned out"
+                ]
+              }
+            },
+            {
+              "id": "smell",
+              "name": {
+                "value": "smell",
+                "synonyms": [
+                  "odor",
+                  "stinks",
+                  "stinky",
+                  "smells"
+                ]
+              }
+            },
+            {
+              "id": "missing",
+              "name": {
+                "value": "missing",
+                "synonyms": [
+                  "not here",
+                  "gone",
+                  "stolen"
+                ]
+              }
+            },
+            {
+              "id": "loose",
+              "name": {
+                "value": "loose",
+                "synonyms": [
+                  "wobbly"
+                ]
+              }
+            },
+            {
+              "id": "falling",
+              "name": {
+                "value": "falling",
+                "synonyms": [
+                  "falling down",
+                  "falling off"
+                ]
+              }
+            },
+            {
+              "id": "clogged",
+              "name": {
+                "value": "clogged",
+                "synonyms": [
+                  "clog",
+                  "won\u0027t flush",
+                  "can\u0027t flush",
+                  "isn\u0027t flushing",
+                  "isn\u0027t draining"
+                ]
+              }
+            },
+            {
+              "id": "leaking",
+              "name": {
+                "value": "leaking",
+                "synonyms": [
+                  "water dripping",
+                  "water leaking",
+                  "water leak",
+                  "running",
+                  "drip",
+                  "leak",
+                  "dripping",
+                  "leaky"
+                ]
+              }
+            },
+            {
+              "id": "gutter",
+              "name": {
+                "value": "gutter"
+              }
+            },
+            {
+              "id": "powerFailure",
+              "name": {
+                "value": "won\u0027t turn on",
+                "synonyms": [
+                  "isn\u0027t turning on",
+                  "won\u0027t power on",
+                  "isn\u0027t powering on"
+                ]
+              }
+            },
+            {
+              "id": "stuck",
+              "name": {
+                "value": "stuck",
+                "synonyms": [
+                  "will not close",
+                  "won\u0027t close",
+                  "cannot clos",
+                  "can\u0027t close",
+                  "can not close",
+                  "can not open",
+                  "cannot open",
+                  "won\u0027t open",
+                  "can\u0027t open",
+                  "stuck shut",
+                  "won\u0027t shut",
+                  "glued shut",
+                  "jammed"
+                ]
+              }
+            },
+            {
+              "id": "toocold",
+              "name": {
+                "value": "too cold",
+                "synonyms": [
+                  "cold",
+                  "too chilly",
+                  "too damn cold",
+                  "too cool",
+                  "freezing"
+                ]
+              }
+            },
+            {
+              "id": "toohot",
+              "name": {
+                "value": "too hot",
+                "synonyms": [
+                  "no hot water",
+                  "hot water",
+                  "scalding",
+                  "hot",
+                  "warm",
+                  "too warm",
+                  "too damn hot",
+                  "boiling"
+                ]
+              }
+            }
+          ],
+          "name": "Maintenance_Issue"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "fifteenth"
+              }
+            },
+            {
+              "name": {
+                "value": "fourteenth"
+              }
+            },
+            {
+              "name": {
+                "value": "thirteenth"
+              }
+            },
+            {
+              "name": {
+                "value": "twelfth"
+              }
+            },
+            {
+              "name": {
+                "value": "eleventh"
+              }
+            },
+            {
+              "id": "first",
+              "name": {
+                "value": "first"
+              }
+            },
+            {
+              "id": "second",
+              "name": {
+                "value": "second"
+              }
+            },
+            {
+              "id": "third",
+              "name": {
+                "value": "third"
+              }
+            },
+            {
+              "id": "fourth",
+              "name": {
+                "value": "fourth"
+              }
+            },
+            {
+              "id": "fifth",
+              "name": {
+                "value": "fifth"
+              }
+            },
+            {
+              "id": "sixth",
+              "name": {
+                "value": "sixth"
+              }
+            },
+            {
+              "id": "seventh",
+              "name": {
+                "value": "seventh"
+              }
+            },
+            {
+              "id": "eighth",
+              "name": {
+                "value": "eighth"
+              }
+            },
+            {
+              "id": "ninth",
+              "name": {
+                "value": "ninth"
+              }
+            },
+            {
+              "id": "tenth",
+              "name": {
+                "value": "tenth"
+              }
+            }
+          ],
+          "name": "Floor_Number"
+        },
+        {
+          "values": [
+            {
+              "id": "north",
+              "name": {
+                "value": "north"
+              }
+            },
+            {
+              "id": "south",
+              "name": {
+                "value": "south"
+              }
+            },
+            {
+              "id": "east",
+              "name": {
+                "value": "east"
+              }
+            },
+            {
+              "id": "west",
+              "name": {
+                "value": "west"
+              }
+            },
+            {
+              "id": "northeast",
+              "name": {
+                "value": "north east"
+              }
+            },
+            {
+              "id": "southeast",
+              "name": {
+                "value": "south east"
+              }
+            },
+            {
+              "id": "northwest",
+              "name": {
+                "value": "north west"
+              }
+            },
+            {
+              "id": "southwest",
+              "name": {
+                "value": "south west"
+              }
+            }
+          ],
+          "name": "Cardinal_Direction"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "treatment",
+                "synonyms": [
+                  "my treatment"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "medication",
+                "synonyms": [
+                  "more drugs",
+                  "more pills",
+                  "more medicine",
+                  "more drugs",
+                  "more medication",
+                  "my medicine",
+                  "medicine",
+                  "my prescription",
+                  "my drugs",
+                  "my drug",
+                  "my medication",
+                  "my pill",
+                  "my pills",
+                  "my meds",
+                  "my medication",
+                  "pill",
+                  "drugs",
+                  "prescriptions",
+                  "medications",
+                  "elixer",
+                  "prescription",
+                  "drug",
+                  "pills",
+                  "meds"
+                ]
+              }
+            },
+            {
+              "id": "antihistamine",
+              "name": {
+                "value": "antihistamine",
+                "synonyms": [
+                  "antihistamine",
+                  "anti histamine"
+                ]
+              }
+            },
+            {
+              "id": "tylenol",
+              "name": {
+                "value": "tylenol",
+                "synonyms": [
+                  "benadryl",
+                  "tylenol"
+                ]
+              }
+            },
+            {
+              "id": "painmeds",
+              "name": {
+                "value": "pain medication",
+                "synonyms": [
+                  "pain pills",
+                  "my pain pills",
+                  "pain medicine",
+                  "pain pill",
+                  "pain med",
+                  "pain killer",
+                  "pain killers",
+                  "a painkiller",
+                  "painkillers",
+                  "pain meds",
+                  "pain medication",
+                  "something for the pain"
+                ]
+              }
+            },
+            {
+              "id": "aspirin",
+              "name": {
+                "value": "aspirin",
+                "synonyms": [
+                  "aspirin",
+                  "asprin"
+                ]
+              }
+            },
+            {
+              "id": "oxycodone",
+              "name": {
+                "value": "oxycodone",
+                "synonyms": [
+                  "oxycodone",
+                  "OxyContin"
+                ]
+              }
+            },
+            {
+              "id": "narco",
+              "name": {
+                "value": "narco",
+                "synonyms": [
+                  "narco",
+                  "narcotics"
+                ]
+              }
+            },
+            {
+              "id": "zofran",
+              "name": {
+                "value": "zofran",
+                "synonyms": [
+                  "zofran"
+                ]
+              }
+            },
+            {
+              "id": "zantac",
+              "name": {
+                "value": "zantac",
+                "synonyms": [
+                  "zantac"
+                ]
+              }
+            },
+            {
+              "id": "coughsyrup",
+              "name": {
+                "value": "cough syrup",
+                "synonyms": [
+                  "cough syrup",
+                  "cough suppressant",
+                  "nighttime cough suppressant",
+                  "robitussin",
+                  "vicks"
+                ]
+              }
+            },
+            {
+              "id": "thorazine",
+              "name": {
+                "value": "thorazine",
+                "synonyms": [
+                  "thorazine"
+                ]
+              }
+            },
+            {
+              "id": "gasx",
+              "name": {
+                "value": "gasx",
+                "synonyms": [
+                  "gasx",
+                  "gas x",
+                  "something for gas"
+                ]
+              }
+            },
+            {
+              "id": "fluids",
+              "name": {
+                "value": "fluids",
+                "synonyms": [
+                  "iv fluids"
+                ]
+              }
+            },
+            {
+              "id": "hydrocodone",
+              "name": {
+                "value": "hydrocodone",
+                "synonyms": [
+                  "hydrocodone",
+                  "acetaminophen",
+                  "Norco"
+                ]
+              }
+            },
+            {
+              "id": "lyrica",
+              "name": {
+                "value": "lyrica"
+              }
+            },
+            {
+              "id": "tramadol",
+              "name": {
+                "value": "tramadol"
+              }
+            },
+            {
+              "id": "Neurontin",
+              "name": {
+                "value": "Neurontin"
+              }
+            },
+            {
+              "id": "gabapentin",
+              "name": {
+                "value": "gabapentin"
+              }
+            },
+            {
+              "id": "Percocet",
+              "name": {
+                "value": "Percocet"
+              }
+            },
+            {
+              "id": "Vicodin",
+              "name": {
+                "value": "Vicodin"
+              }
+            },
+            {
+              "id": "methadone",
+              "name": {
+                "value": "methadone"
+              }
+            },
+            {
+              "id": "Norco",
+              "name": {
+                "value": "Norco"
+              }
+            },
+            {
+              "id": "Celebrex",
+              "name": {
+                "value": "Celebrex"
+              }
+            },
+            {
+              "id": "Ultram",
+              "name": {
+                "value": "Ultram"
+              }
+            },
+            {
+              "id": "Dilaudid",
+              "name": {
+                "value": "Dilaudid"
+              }
+            },
+            {
+              "id": "Opana",
+              "name": {
+                "value": "Opana"
+              }
+            },
+            {
+              "id": "ibuprofen",
+              "name": {
+                "value": "ibuprofen"
+              }
+            },
+            {
+              "id": "Roxicodone",
+              "name": {
+                "value": "Roxicodone"
+              }
+            },
+            {
+              "id": "etodolac",
+              "name": {
+                "value": "etodolac"
+              }
+            },
+            {
+              "id": "xanax",
+              "name": {
+                "value": "xanax"
+              }
+            },
+            {
+              "id": "Kadian",
+              "name": {
+                "value": "Kadian"
+              }
+            },
+            {
+              "id": "Endocet",
+              "name": {
+                "value": "Endocet"
+              }
+            },
+            {
+              "id": "Aleve",
+              "name": {
+                "value": "Aleve"
+              }
+            },
+            {
+              "id": "Ultracet",
+              "name": {
+                "value": "Ultracet"
+              }
+            },
+            {
+              "id": "Butrans",
+              "name": {
+                "value": "Butrans"
+              }
+            },
+            {
+              "id": "pregabalin",
+              "name": {
+                "value": "pregabalin"
+              }
+            },
+            {
+              "id": "naproxen",
+              "name": {
+                "value": "naproxen"
+              }
+            },
+            {
+              "id": "diclofenac",
+              "name": {
+                "value": "diclofenac"
+              }
+            },
+            {
+              "id": "Nucynta",
+              "name": {
+                "value": "Nucynta"
+              }
+            },
+            {
+              "id": "kietorolac",
+              "name": {
+                "value": "kietorolac"
+              }
+            },
+            {
+              "id": "Embeda",
+              "name": {
+                "value": "Embeda"
+              }
+            },
+            {
+              "id": "Demerol",
+              "name": {
+                "value": "Demerol"
+              }
+            },
+            {
+              "id": "Naprosyn",
+              "name": {
+                "value": "Naprosyn"
+              }
+            },
+            {
+              "id": "Prialt",
+              "name": {
+                "value": "Prialt"
+              }
+            },
+            {
+              "id": "Ponstel",
+              "name": {
+                "value": "Ponstel"
+              }
+            },
+            {
+              "id": "oxymorphone",
+              "name": {
+                "value": "oxymorphone"
+              }
+            },
+            {
+              "id": "Zipsor",
+              "name": {
+                "value": "Zipsor"
+              }
+            },
+            {
+              "id": "ketoprofen",
+              "name": {
+                "value": "ketoprofen"
+              }
+            },
+            {
+              "id": "meperidine",
+              "name": {
+                "value": "meperidine"
+              }
+            },
+            {
+              "id": "Sprix",
+              "name": {
+                "value": "Sprix"
+              }
+            },
+            {
+              "id": "cambia",
+              "name": {
+                "value": "cambia"
+              }
+            },
+            {
+              "id": "gralise",
+              "name": {
+                "value": "gralise"
+              }
+            },
+            {
+              "id": "Methadose",
+              "name": {
+                "value": "Methadose"
+              }
+            },
+            {
+              "id": "Hysingla",
+              "name": {
+                "value": "Hysingla"
+              }
+            },
+            {
+              "id": "pentazocine",
+              "name": {
+                "value": "pentazocine"
+              }
+            },
+            {
+              "id": "naloxone",
+              "name": {
+                "value": "naloxone"
+              }
+            },
+            {
+              "id": "celecoxib",
+              "name": {
+                "value": "celecoxib"
+              }
+            },
+            {
+              "id": "Zorvolex",
+              "name": {
+                "value": "Zorvolex"
+              }
+            },
+            {
+              "id": "Lortab",
+              "name": {
+                "value": "Lortab"
+              }
+            },
+            {
+              "id": "Excedrin",
+              "name": {
+                "value": "Excedrin"
+              }
+            },
+            {
+              "id": "Xtampza",
+              "name": {
+                "value": "Xtampza"
+              }
+            },
+            {
+              "id": "Percogesic",
+              "name": {
+                "value": "Percogesic"
+              }
+            },
+            {
+              "id": "Zohydro",
+              "name": {
+                "value": "Zohydro"
+              }
+            },
+            {
+              "id": "butorphanol",
+              "name": {
+                "value": "butorphanol"
+              }
+            },
+            {
+              "id": "Dolophine",
+              "name": {
+                "value": "Dolophine"
+              }
+            },
+            {
+              "id": "fentanyl",
+              "name": {
+                "value": "fentanyl"
+              }
+            },
+            {
+              "id": "tapentadol",
+              "name": {
+                "value": "tapentadol"
+              }
+            },
+            {
+              "id": "diflunisal",
+              "name": {
+                "value": "diflunisal"
+              }
+            },
+            {
+              "id": "Advil",
+              "name": {
+                "value": "Advil"
+              }
+            },
+            {
+              "id": "Reprexain",
+              "name": {
+                "value": "Reprexain"
+              }
+            },
+            {
+              "id": "Xodol",
+              "name": {
+                "value": "Xodol"
+              }
+            },
+            {
+              "id": "Lorcet",
+              "name": {
+                "value": "Lorcet"
+              }
+            },
+            {
+              "id": "Trezix",
+              "name": {
+                "value": "Trezix"
+              }
+            },
+            {
+              "id": "hydromorphone",
+              "name": {
+                "value": "hydromorphone"
+              }
+            },
+            {
+              "id": "codeine",
+              "name": {
+                "value": "codeine"
+              }
+            },
+            {
+              "id": "Buprenex",
+              "name": {
+                "value": "Buprenex"
+              }
+            },
+            {
+              "id": "Nalfon",
+              "name": {
+                "value": "Nalfon"
+              }
+            },
+            {
+              "id": "Zoloft",
+              "name": {
+                "value": "Zoloft"
+              }
+            },
+            {
+              "id": "FootCream",
+              "name": {
+                "value": "Foot Cream",
+                "synonyms": [
+                  "foot cream"
+                ]
+              }
+            }
+          ],
+          "name": "Medication_Name"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "treatment"
+              }
+            },
+            {
+              "name": {
+                "value": "topical"
+              }
+            },
+            {
+              "name": {
+                "value": "injection"
+              }
+            },
+            {
+              "name": {
+                "value": "I. v.",
+                "synonyms": [
+                  "intra venous",
+                  "i.v.",
+                  "ivy"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "prescription"
+              }
+            },
+            {
+              "name": {
+                "value": "pill",
+                "synonyms": [
+                  "pills"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "medication",
+                "synonyms": [
+                  "drugs",
+                  "drug",
+                  "medicine",
+                  "meds",
+                  "medications"
+                ]
+              }
+            }
+          ],
+          "name": "Medication_Route"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "ambulation",
+                "synonyms": [
+                  "moving around",
+                  "move",
+                  "moving"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "exercise",
+                "synonyms": [
+                  "workout",
+                  "calisthenics",
+                  "cardio",
+                  "weight lifting",
+                  "work out"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "repositioning",
+                "synonyms": [
+                  "reposition",
+                  "turn me",
+                  "turn me over",
+                  "position me"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "chair",
+                "synonyms": [
+                  "my recliner",
+                  "recliner",
+                  "my chair"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "bed",
+                "synonyms": [
+                  "the bed",
+                  "my bed"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "scooter",
+                "synonyms": [
+                  "my scooter"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "walker",
+                "synonyms": [
+                  "my cane",
+                  "my walker",
+                  "cane"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "out of bed",
+                "synonyms": [
+                  "leaving my bed",
+                  "leaving bed",
+                  "leave bed",
+                  "get out of my bed",
+                  "get out of bed",
+                  "leaving my bed",
+                  "leaving bed",
+                  "getting up",
+                  "leave my bed",
+                  "out of my bed"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "in bed",
+                "synonyms": [
+                  "into my bed",
+                  "into bed"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "crutches",
+                "synonyms": [
+                  "my crutches",
+                  "my crutch",
+                  "crutch"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "gurney"
+              }
+            },
+            {
+              "name": {
+                "value": "wheelchair",
+                "synonyms": [
+                  "into my wheelchair",
+                  "into the wheelchair",
+                  "my wheelchair",
+                  "wheel chair"
+                ]
+              }
+            },
+            {
+              "id": "backtobed",
+              "name": {
+                "value": "get back to bed",
+                "synonyms": [
+                  "to bed",
+                  "back to bed",
+                  "getting back to bed",
+                  "getting into bed"
+                ]
+              }
+            },
+            {
+              "id": "standup",
+              "name": {
+                "value": "stand up",
+                "synonyms": [
+                  "to stand up",
+                  "get me up",
+                  "to stand",
+                  "get up",
+                  "stand up"
+                ]
+              }
+            },
+            {
+              "id": "situp",
+              "name": {
+                "value": "sit up",
+                "synonyms": [
+                  "to sit",
+                  "sit up"
+                ]
+              }
+            },
+            {
+              "id": "laydown",
+              "name": {
+                "value": "lay down",
+                "synonyms": [
+                  "to lay down",
+                  "lay down",
+                  "lay",
+                  "lay flat",
+                  "lie down",
+                  "lie",
+                  "lie flat"
+                ]
+              }
+            },
+            {
+              "id": "getdressed",
+              "name": {
+                "value": "get dressed",
+                "synonyms": [
+                  "getting dressed",
+                  "to get dressed",
+                  "my clothes off",
+                  "my clothes on",
+                  "my clothes",
+                  "clothes off",
+                  "clothes on",
+                  "dressed"
+                ]
+              }
+            }
+          ],
+          "name": "Mobility_Need"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "outside",
+                "synonyms": [
+                  "out of doors",
+                  "outdoors",
+                  "outdoor",
+                  "out side"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "activity center",
+                "synonyms": [
+                  "activity centre"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "theatre"
+              }
+            },
+            {
+              "name": {
+                "value": "nurse station",
+                "synonyms": [
+                  "wellness center",
+                  "wellness station",
+                  "nurses station"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "bingo"
+              }
+            },
+            {
+              "name": {
+                "value": "gym",
+                "synonyms": [
+                  "fintess centre",
+                  "fitness center"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "doctor office",
+                "synonyms": [
+                  "doctors office"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "front door"
+              }
+            },
+            {
+              "name": {
+                "value": "hair dresser"
+              }
+            },
+            {
+              "name": {
+                "value": "event",
+                "synonyms": [
+                  "show",
+                  "evening entertainment",
+                  "program"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "meal",
+                "synonyms": [
+                  "supper",
+                  "dinner",
+                  "lunch",
+                  "breakfast"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "upstairs"
+              }
+            },
+            {
+              "name": {
+                "value": "downstairs"
+              }
+            },
+            {
+              "name": {
+                "value": "Physical Therapy",
+                "synonyms": [
+                  "speach therapy",
+                  "speech therapy",
+                  "therapy"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "theater",
+                "synonyms": [
+                  "theatre"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "office"
+              }
+            },
+            {
+              "name": {
+                "value": "chapel"
+              }
+            },
+            {
+              "name": {
+                "value": "reflection room"
+              }
+            },
+            {
+              "name": {
+                "value": "library"
+              }
+            },
+            {
+              "name": {
+                "value": "billiard room"
+              }
+            },
+            {
+              "name": {
+                "value": "movie theater"
+              }
+            },
+            {
+              "name": {
+                "value": "nail salon"
+              }
+            },
+            {
+              "name": {
+                "value": "hair salon"
+              }
+            },
+            {
+              "name": {
+                "value": "coffee shop"
+              }
+            },
+            {
+              "name": {
+                "value": "health club",
+                "synonyms": [
+                  "workout room",
+                  "fitness room",
+                  "gym"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "conference room"
+              }
+            },
+            {
+              "name": {
+                "value": "recreation room"
+              }
+            },
+            {
+              "name": {
+                "value": "tea room"
+              }
+            },
+            {
+              "name": {
+                "value": "barber shop"
+              }
+            },
+            {
+              "name": {
+                "value": "convenience store"
+              }
+            },
+            {
+              "name": {
+                "value": "restaurant",
+                "synonyms": [
+                  "canteen",
+                  "cafe",
+                  "eatery"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "snack bar"
+              }
+            },
+            {
+              "name": {
+                "value": "bar"
+              }
+            },
+            {
+              "name": {
+                "value": "clinic"
+              }
+            },
+            {
+              "name": {
+                "value": "apartment",
+                "synonyms": [
+                  "home",
+                  "suite"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "grocery store"
+              }
+            },
+            {
+              "name": {
+                "value": "corner store"
+              }
+            },
+            {
+              "name": {
+                "value": "atm",
+                "synonyms": [
+                  "a.t.m.",
+                  "a. t. m."
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "gift shop"
+              }
+            },
+            {
+              "name": {
+                "value": "shop"
+              }
+            },
+            {
+              "name": {
+                "value": "shuttle"
+              }
+            },
+            {
+              "name": {
+                "value": "parlor"
+              }
+            },
+            {
+              "name": {
+                "value": "lounge",
+                "synonyms": [
+                  "lounges"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "salon",
+                "synonyms": [
+                  "beauty salon"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "car park"
+              }
+            },
+            {
+              "name": {
+                "value": "parking garage"
+              }
+            },
+            {
+              "name": {
+                "value": "waiting area"
+              }
+            },
+            {
+              "name": {
+                "value": "dinning room",
+                "synonyms": [
+                  "kitchen",
+                  "food court",
+                  "cafeteria",
+                  "bistro"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "waiting room"
+              }
+            },
+            {
+              "name": {
+                "value": "parking lot"
+              }
+            },
+            {
+              "name": {
+                "value": "front desk"
+              }
+            },
+            {
+              "name": {
+                "value": "lobby"
+              }
+            }
+          ],
+          "name": "Community_Location"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "breathe",
+                "synonyms": [
+                  "breath"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "poop",
+                "synonyms": [
+                  "fecal matter",
+                  "feces",
+                  "stool"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "vulva"
+              }
+            },
+            {
+              "name": {
+                "value": "vagina"
+              }
+            },
+            {
+              "id": "back",
+              "name": {
+                "value": "back",
+                "synonyms": [
+                  "back",
+                  "upper back",
+                  "lower back"
+                ]
+              }
+            },
+            {
+              "id": "head",
+              "name": {
+                "value": "head",
+                "synonyms": [
+                  "scalp",
+                  "head",
+                  "brain"
+                ]
+              }
+            },
+            {
+              "id": "forehead",
+              "name": {
+                "value": "forehead",
+                "synonyms": [
+                  "four head",
+                  "fore head",
+                  "forehead"
+                ]
+              }
+            },
+            {
+              "id": "jaw",
+              "name": {
+                "value": "jaw",
+                "synonyms": [
+                  "jaw"
+                ]
+              }
+            },
+            {
+              "id": "cheek",
+              "name": {
+                "value": "cheek",
+                "synonyms": [
+                  "cheek"
+                ]
+              }
+            },
+            {
+              "id": "chin",
+              "name": {
+                "value": "chin",
+                "synonyms": [
+                  "chin"
+                ]
+              }
+            },
+            {
+              "id": "eye",
+              "name": {
+                "value": "eye",
+                "synonyms": [
+                  "eye",
+                  "eyes"
+                ]
+              }
+            },
+            {
+              "id": "ear",
+              "name": {
+                "value": "ear",
+                "synonyms": [
+                  "ear",
+                  "ears"
+                ]
+              }
+            },
+            {
+              "id": "nose",
+              "name": {
+                "value": "nose",
+                "synonyms": [
+                  "nose"
+                ]
+              }
+            },
+            {
+              "id": "mouth",
+              "name": {
+                "value": "mouth",
+                "synonyms": [
+                  "mouth"
+                ]
+              }
+            },
+            {
+              "id": "teeth",
+              "name": {
+                "value": "teeth",
+                "synonyms": [
+                  "dentures",
+                  "denture",
+                  "teeth"
+                ]
+              }
+            },
+            {
+              "id": "tongue",
+              "name": {
+                "value": "tongue",
+                "synonyms": [
+                  "tongue"
+                ]
+              }
+            },
+            {
+              "id": "throat",
+              "name": {
+                "value": "throat",
+                "synonyms": [
+                  "throat"
+                ]
+              }
+            },
+            {
+              "id": "neck",
+              "name": {
+                "value": "neck",
+                "synonyms": [
+                  "neck"
+                ]
+              }
+            },
+            {
+              "id": "shoulder",
+              "name": {
+                "value": "shoulder",
+                "synonyms": [
+                  "shoulder",
+                  "shoulders"
+                ]
+              }
+            },
+            {
+              "id": "arm",
+              "name": {
+                "value": "arm",
+                "synonyms": [
+                  "arm",
+                  "arms"
+                ]
+              }
+            },
+            {
+              "id": "elbow",
+              "name": {
+                "value": "elbow",
+                "synonyms": [
+                  "elbow"
+                ]
+              }
+            },
+            {
+              "id": "wrist",
+              "name": {
+                "value": "wrist",
+                "synonyms": [
+                  "wrist",
+                  "wrists"
+                ]
+              }
+            },
+            {
+              "id": "hand",
+              "name": {
+                "value": "hand",
+                "synonyms": [
+                  "hand",
+                  "hands"
+                ]
+              }
+            },
+            {
+              "id": "finger",
+              "name": {
+                "value": "finger",
+                "synonyms": [
+                  "finger",
+                  "fingers"
+                ]
+              }
+            },
+            {
+              "id": "thumb",
+              "name": {
+                "value": "thumb",
+                "synonyms": [
+                  "thumb",
+                  "thumbs"
+                ]
+              }
+            },
+            {
+              "id": "spine",
+              "name": {
+                "value": "spine",
+                "synonyms": [
+                  "spine"
+                ]
+              }
+            },
+            {
+              "id": "chest",
+              "name": {
+                "value": "chest",
+                "synonyms": [
+                  "chest"
+                ]
+              }
+            },
+            {
+              "id": "thorax",
+              "name": {
+                "value": "thorax",
+                "synonyms": [
+                  "thorax"
+                ]
+              }
+            },
+            {
+              "id": "breast",
+              "name": {
+                "value": "breast",
+                "synonyms": [
+                  "breast"
+                ]
+              }
+            },
+            {
+              "id": "abdomen",
+              "name": {
+                "value": "abdomen",
+                "synonyms": [
+                  "abdomen"
+                ]
+              }
+            },
+            {
+              "id": "groin",
+              "name": {
+                "value": "groin",
+                "synonyms": [
+                  "groin"
+                ]
+              }
+            },
+            {
+              "id": "hip",
+              "name": {
+                "value": "hip",
+                "synonyms": [
+                  "hip",
+                  "hips"
+                ]
+              }
+            },
+            {
+              "id": "buttocks",
+              "name": {
+                "value": "buttocks",
+                "synonyms": [
+                  "butt",
+                  "buttocks"
+                ]
+              }
+            },
+            {
+              "id": "penis",
+              "name": {
+                "value": "penis",
+                "synonyms": [
+                  "penis"
+                ]
+              }
+            },
+            {
+              "id": "leg",
+              "name": {
+                "value": "leg",
+                "synonyms": [
+                  "leg"
+                ]
+              }
+            },
+            {
+              "id": "thigh",
+              "name": {
+                "value": "thigh",
+                "synonyms": [
+                  "thigh"
+                ]
+              }
+            },
+            {
+              "id": "knee",
+              "name": {
+                "value": "knee",
+                "synonyms": [
+                  "knee"
+                ]
+              }
+            },
+            {
+              "id": "calf",
+              "name": {
+                "value": "calf",
+                "synonyms": [
+                  "calf"
+                ]
+              }
+            },
+            {
+              "id": "heel",
+              "name": {
+                "value": "heel",
+                "synonyms": [
+                  "heel"
+                ]
+              }
+            },
+            {
+              "id": "ankle",
+              "name": {
+                "value": "ankle",
+                "synonyms": [
+                  "ankle"
+                ]
+              }
+            },
+            {
+              "id": "foot",
+              "name": {
+                "value": "foot",
+                "synonyms": [
+                  "foot"
+                ]
+              }
+            },
+            {
+              "id": "toes",
+              "name": {
+                "value": "toes",
+                "synonyms": [
+                  "toes"
+                ]
+              }
+            },
+            {
+              "id": "bladder",
+              "name": {
+                "value": "bladder",
+                "synonyms": [
+                  "bladder"
+                ]
+              }
+            },
+            {
+              "id": "esophagus",
+              "name": {
+                "value": "esophagus",
+                "synonyms": [
+                  "esophagus"
+                ]
+              }
+            },
+            {
+              "id": "gallbladder",
+              "name": {
+                "value": "gallbladder",
+                "synonyms": [
+                  "gallbladder"
+                ]
+              }
+            },
+            {
+              "id": "heart",
+              "name": {
+                "value": "heart",
+                "synonyms": [
+                  "heart"
+                ]
+              }
+            },
+            {
+              "id": "intestines",
+              "name": {
+                "value": "intestines",
+                "synonyms": [
+                  "intestines"
+                ]
+              }
+            },
+            {
+              "id": "kidney",
+              "name": {
+                "value": "kidney",
+                "synonyms": [
+                  "kidney"
+                ]
+              }
+            },
+            {
+              "id": "liver",
+              "name": {
+                "value": "liver",
+                "synonyms": [
+                  "liver"
+                ]
+              }
+            },
+            {
+              "id": "lung",
+              "name": {
+                "value": "lung",
+                "synonyms": [
+                  "lung"
+                ]
+              }
+            },
+            {
+              "id": "pancreas",
+              "name": {
+                "value": "pancreas",
+                "synonyms": [
+                  "pancreas"
+                ]
+              }
+            },
+            {
+              "id": "prostate",
+              "name": {
+                "value": "prostate",
+                "synonyms": [
+                  "prostate"
+                ]
+              }
+            },
+            {
+              "id": "spleen",
+              "name": {
+                "value": "spleen",
+                "synonyms": [
+                  "spleen"
+                ]
+              }
+            },
+            {
+              "id": "stomach",
+              "name": {
+                "value": "stomach",
+                "synonyms": [
+                  "stomach"
+                ]
+              }
+            },
+            {
+              "id": "testicles",
+              "name": {
+                "value": "testicles",
+                "synonyms": [
+                  "testicles"
+                ]
+              }
+            },
+            {
+              "id": "uterus",
+              "name": {
+                "value": "uterus",
+                "synonyms": [
+                  "uterus"
+                ]
+              }
+            }
+          ],
+          "name": "Body_Part"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "shampoo",
+                "synonyms": [
+                  "hair soap",
+                  "hair conditioner",
+                  "conditioner"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "soap",
+                "synonyms": [
+                  "bar of soap",
+                  "body soap",
+                  "liquid soap",
+                  "bar soap",
+                  "shower soap",
+                  "bath soap",
+                  "more soap"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "depends",
+                "synonyms": [
+                  "depend"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "liner",
+                "synonyms": [
+                  "liners",
+                  "panty liner"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "continence product",
+                "synonyms": [
+                  "continents products",
+                  "continents product",
+                  "continence products"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "tampon",
+                "synonyms": [
+                  "tampons"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "underwear",
+                "synonyms": [
+                  "brief",
+                  "panties",
+                  "briefs",
+                  "under wear"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "all purpose cleaner"
+              }
+            },
+            {
+              "name": {
+                "value": "dishwashing detergent",
+                "synonyms": [
+                  "dish soap",
+                  "dish washing detergent",
+                  "dish washing soap",
+                  "dish washing detergent",
+                  "dishwasher soap",
+                  "dishwasher liquid",
+                  "dishwasher detergent",
+                  "dishwashing liquid"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "hand soap",
+                "synonyms": [
+                  "soap for my hands",
+                  "soap for hands",
+                  "hand cleaner",
+                  "hand sanitizer"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "dish soap"
+              }
+            },
+            {
+              "name": {
+                "value": "hearing aide",
+                "synonyms": [
+                  "hearing aid"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "batteries",
+                "synonyms": [
+                  "replace battery",
+                  "new battery",
+                  "battery",
+                  "replace batteries",
+                  "fresh batteries",
+                  "new batteries"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "hearing aid battery",
+                "synonyms": [
+                  "hearing aide batteries",
+                  "hearing aid batteries",
+                  "battery for hearing aid",
+                  "battery for hearing aide",
+                  "hearing aide battery"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "groceries"
+              }
+            },
+            {
+              "name": {
+                "value": "toothpaste",
+                "synonyms": [
+                  "tooth paste"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "toothbrush",
+                "synonyms": [
+                  "tooth brush"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "water",
+                "synonyms": [
+                  "bottled water",
+                  "bottles of water",
+                  "water delivery",
+                  "water bottles",
+                  "water bottle"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "case of water",
+                "synonyms": [
+                  "pack of water",
+                  "water case"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "toilet paper",
+                "synonyms": [
+                  "bath tissue",
+                  "potty tissue",
+                  "toilet tissue",
+                  "more toilet paper",
+                  "tp",
+                  "t. p. "
+                ]
+              }
+            },
+            {
+              "id": "blanket",
+              "name": {
+                "value": "blanket",
+                "synonyms": [
+                  "blankie",
+                  "bedding",
+                  "covers",
+                  "comforter"
+                ]
+              }
+            },
+            {
+              "id": "pad",
+              "name": {
+                "value": "heating pad",
+                "synonyms": [
+                  "hot water bottle",
+                  "hot pad",
+                  "heat pack"
+                ]
+              }
+            },
+            {
+              "id": "pads",
+              "name": {
+                "value": "pads",
+                "synonyms": [
+                  "maxi pads"
+                ]
+              }
+            },
+            {
+              "id": "pillow",
+              "name": {
+                "value": "pillow",
+                "synonyms": [
+                  "headrest",
+                  "cushion"
+                ]
+              }
+            },
+            {
+              "id": "pillowcase",
+              "name": {
+                "value": "pillow case",
+                "synonyms": [
+                  "pillow cases"
+                ]
+              }
+            },
+            {
+              "id": "paper",
+              "name": {
+                "value": "paper"
+              }
+            },
+            {
+              "id": "diapers",
+              "name": {
+                "value": "diapers",
+                "synonyms": [
+                  "disposable underwear",
+                  "adult diapers",
+                  "diaper"
+                ]
+              }
+            },
+            {
+              "id": "wipes",
+              "name": {
+                "value": "wipes",
+                "synonyms": [
+                  "wipe"
+                ]
+              }
+            },
+            {
+              "id": "tissues",
+              "name": {
+                "value": "tissues",
+                "synonyms": [
+                  "tissue",
+                  "kleenex",
+                  "box of tissues"
+                ]
+              }
+            }
+          ],
+          "name": "Supply_Type"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "handful"
+              }
+            },
+            {
+              "name": {
+                "value": "half dozen"
+              }
+            },
+            {
+              "name": {
+                "value": "dozen"
+              }
+            },
+            {
+              "name": {
+                "value": "a bunch",
+                "synonyms": [
+                  "bunch of"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "twenty five"
+              }
+            },
+            {
+              "name": {
+                "value": "twenty nine"
+              }
+            },
+            {
+              "name": {
+                "value": "twenty eight"
+              }
+            },
+            {
+              "name": {
+                "value": "twenty seven"
+              }
+            },
+            {
+              "name": {
+                "value": "nineteen"
+              }
+            },
+            {
+              "name": {
+                "value": "twenty three"
+              }
+            },
+            {
+              "name": {
+                "value": "twenty two"
+              }
+            },
+            {
+              "name": {
+                "value": "twenty six"
+              }
+            },
+            {
+              "name": {
+                "value": "twenty four"
+              }
+            },
+            {
+              "name": {
+                "value": "fourteen"
+              }
+            },
+            {
+              "name": {
+                "value": "seventeen"
+              }
+            },
+            {
+              "name": {
+                "value": "thirteen"
+              }
+            },
+            {
+              "name": {
+                "value": "fifteen"
+              }
+            },
+            {
+              "name": {
+                "value": "eighteen"
+              }
+            },
+            {
+              "name": {
+                "value": "sixteen"
+              }
+            },
+            {
+              "name": {
+                "value": "twelve"
+              }
+            },
+            {
+              "name": {
+                "value": "eleven"
+              }
+            },
+            {
+              "id": "one",
+              "name": {
+                "value": "one"
+              }
+            },
+            {
+              "id": "two",
+              "name": {
+                "value": "two"
+              }
+            },
+            {
+              "id": "three",
+              "name": {
+                "value": "three"
+              }
+            },
+            {
+              "id": "four",
+              "name": {
+                "value": "four"
+              }
+            },
+            {
+              "id": "five",
+              "name": {
+                "value": "five"
+              }
+            },
+            {
+              "id": "six",
+              "name": {
+                "value": "six"
+              }
+            },
+            {
+              "id": "seven",
+              "name": {
+                "value": "seven"
+              }
+            },
+            {
+              "id": "eight",
+              "name": {
+                "value": "eight"
+              }
+            },
+            {
+              "id": "nine",
+              "name": {
+                "value": "nine"
+              }
+            },
+            {
+              "id": "ten",
+              "name": {
+                "value": "ten"
+              }
+            },
+            {
+              "id": "some",
+              "name": {
+                "value": "some"
+              }
+            },
+            {
+              "id": "few",
+              "name": {
+                "value": "few"
+              }
+            },
+            {
+              "id": "many",
+              "name": {
+                "value": "many"
+              }
+            },
+            {
+              "id": "lotsof",
+              "name": {
+                "value": "lots of"
+              }
+            },
+            {
+              "id": "justone",
+              "name": {
+                "value": "just one"
+              }
+            },
+            {
+              "id": "justtwo",
+              "name": {
+                "value": "just two"
+              }
+            },
+            {
+              "id": "justthree",
+              "name": {
+                "value": "just three"
+              }
+            },
+            {
+              "id": "onlyone",
+              "name": {
+                "value": "only one"
+              }
+            },
+            {
+              "id": "onlytwo",
+              "name": {
+                "value": "only two"
+              }
+            },
+            {
+              "id": "onlythree",
+              "name": {
+                "value": "only three"
+              }
+            }
+          ],
+          "name": "Item_Count"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "upset"
+              }
+            },
+            {
+              "name": {
+                "value": "taste anything",
+                "synonyms": [
+                  "cannot taste",
+                  "no taste"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "antsy",
+                "synonyms": [
+                  "anxious"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "not good",
+                "synonyms": [
+                  "well",
+                  "good"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "not well"
+              }
+            },
+            {
+              "name": {
+                "value": "threw up"
+              }
+            },
+            {
+              "name": {
+                "value": "diarrhea",
+                "synonyms": [
+                  "the trots",
+                  "the runs"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "headache",
+                "synonyms": [
+                  "head ache"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "sore throat",
+                "synonyms": [
+                  "raw throat"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "sneeze",
+                "synonyms": [
+                  "allergy",
+                  "allergies",
+                  "sneezing"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "cough"
+              }
+            },
+            {
+              "name": {
+                "value": "distress"
+              }
+            },
+            {
+              "name": {
+                "value": "tore"
+              }
+            },
+            {
+              "name": {
+                "value": "pulled"
+              }
+            },
+            {
+              "name": {
+                "value": "tweak",
+                "synonyms": [
+                  "tweaked"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "twinge",
+                "synonyms": [
+                  "twinging"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "spasm",
+                "synonyms": [
+                  "spasming"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "misery",
+                "synonyms": [
+                  "miserable"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "sore",
+                "synonyms": [
+                  "soreness"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "gash",
+                "synonyms": [
+                  "wound",
+                  "cut"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "discomfort",
+                "synonyms": [
+                  "uncomfortable"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "bruise",
+                "synonyms": [
+                  "bruising",
+                  "bruised"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "ache",
+                "synonyms": [
+                  "ached",
+                  "aches"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "out of sorts",
+                "synonyms": [
+                  "strange",
+                  "odd"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "unhealthy",
+                "synonyms": [
+                  "bad",
+                  "not good"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "temperature"
+              }
+            },
+            {
+              "name": {
+                "value": "bug"
+              }
+            },
+            {
+              "name": {
+                "value": "stomach bug"
+              }
+            },
+            {
+              "name": {
+                "value": "terrible",
+                "synonyms": [
+                  "horrible",
+                  "awful"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "rotten"
+              }
+            },
+            {
+              "name": {
+                "value": "awful"
+              }
+            },
+            {
+              "name": {
+                "value": "infirm"
+              }
+            },
+            {
+              "name": {
+                "value": "disease"
+              }
+            },
+            {
+              "name": {
+                "value": "weak"
+              }
+            },
+            {
+              "name": {
+                "value": "run down"
+              }
+            },
+            {
+              "name": {
+                "value": "not looking good",
+                "synonyms": [
+                  "looks bad",
+                  "looking bad"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "poor health"
+              }
+            },
+            {
+              "name": {
+                "value": "runny nose"
+              }
+            },
+            {
+              "name": {
+                "value": "cold"
+              }
+            },
+            {
+              "name": {
+                "value": "fever"
+              }
+            },
+            {
+              "name": {
+                "value": "COVID",
+                "synonyms": [
+                  "covid",
+                  "Coronavirus",
+                  "COVID-19",
+                  "COVID19",
+                  "c.o.v.i.d.",
+                  "c. o. v. i. d."
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "lousy"
+              }
+            },
+            {
+              "name": {
+                "value": "bedridden",
+                "synonyms": [
+                  "bed ridden"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "wobbly"
+              }
+            },
+            {
+              "name": {
+                "value": "infected"
+              }
+            },
+            {
+              "name": {
+                "value": "good"
+              }
+            },
+            {
+              "name": {
+                "value": "bad"
+              }
+            },
+            {
+              "name": {
+                "value": "better"
+              }
+            },
+            {
+              "name": {
+                "value": "worse"
+              }
+            },
+            {
+              "name": {
+                "value": "nauseous",
+                "synonyms": [
+                  "nausea",
+                  "nauseated"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "anxious",
+                "synonyms": [
+                  "anxiety"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "vomit",
+                "synonyms": [
+                  "vomiting",
+                  "sick up",
+                  "vomited",
+                  "barfed",
+                  "barf",
+                  "throw up"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "ill"
+              }
+            },
+            {
+              "name": {
+                "value": "depressed",
+                "synonyms": [
+                  "unhappy"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "miserable"
+              }
+            },
+            {
+              "name": {
+                "value": "tired"
+              }
+            },
+            {
+              "name": {
+                "value": "sick"
+              }
+            },
+            {
+              "name": {
+                "value": "unwell",
+                "synonyms": [
+                  "under the weather"
+                ]
+              }
+            }
+          ],
+          "name": "Symptom"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "phone",
+                "synonyms": [
+                  "cellular phones",
+                  "cellular phone",
+                  "cell phones",
+                  "cell phone",
+                  "phones",
+                  "smart phones",
+                  "mobile devices",
+                  "mobile device"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "remote"
+              }
+            },
+            {
+              "name": {
+                "value": "television"
+              }
+            },
+            {
+              "name": {
+                "value": "thermostat"
+              }
+            },
+            {
+              "name": {
+                "value": "echo show"
+              }
+            },
+            {
+              "name": {
+                "value": "echo dot"
+              }
+            },
+            {
+              "name": {
+                "value": "alexa",
+                "synonyms": [
+                  "amazon"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "tablet"
+              }
+            },
+            {
+              "name": {
+                "value": "voicemail",
+                "synonyms": [
+                  "voice mail"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "laptop"
+              }
+            },
+            {
+              "name": {
+                "value": "computer",
+                "synonyms": [
+                  "desktop computer",
+                  "desktop"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "internet",
+                "synonyms": [
+                  "w.i.f.i.",
+                  "wi-fi",
+                  "wifi"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "chromecast"
+              }
+            },
+            {
+              "name": {
+                "value": "smartphone"
+              }
+            },
+            {
+              "name": {
+                "value": "android"
+              }
+            },
+            {
+              "name": {
+                "value": "ipod"
+              }
+            },
+            {
+              "name": {
+                "value": "ipad"
+              }
+            },
+            {
+              "name": {
+                "value": "iphone"
+              }
+            }
+          ],
+          "name": "Tech_Device"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "bed pan",
+                "synonyms": [
+                  "bedpan"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "poop",
+                "synonyms": [
+                  "waste",
+                  "stool",
+                  "fecal matter",
+                  "excretion",
+                  "defecation",
+                  "crap",
+                  "poo",
+                  "number two",
+                  "feces",
+                  "dump",
+                  "shit",
+                  "defecate"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "pee",
+                "synonyms": [
+                  "piss",
+                  "take a leak",
+                  "wizz",
+                  "pee pee",
+                  "number one",
+                  "tinkle",
+                  "urinate"
+                ]
+              }
+            }
+          ],
+          "name": "Bathroom_Need"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "bed pan",
+                "synonyms": [
+                  "bedpan"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "powder room"
+              }
+            },
+            {
+              "name": {
+                "value": "rest room",
+                "synonyms": [
+                  "restroom"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "comfort room"
+              }
+            },
+            {
+              "name": {
+                "value": "mens room"
+              }
+            },
+            {
+              "name": {
+                "value": "ladies room"
+              }
+            },
+            {
+              "name": {
+                "value": "girls room"
+              }
+            },
+            {
+              "name": {
+                "value": "boys room"
+              }
+            },
+            {
+              "name": {
+                "value": "water closet"
+              }
+            },
+            {
+              "name": {
+                "value": "wash room"
+              }
+            },
+            {
+              "name": {
+                "value": "loo"
+              }
+            },
+            {
+              "name": {
+                "value": "john"
+              }
+            },
+            {
+              "name": {
+                "value": "bathroom",
+                "synonyms": [
+                  "bathroom"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "lavatory"
+              }
+            },
+            {
+              "name": {
+                "value": "urinal"
+              }
+            },
+            {
+              "name": {
+                "value": "toilet",
+                "synonyms": [
+                  "potty"
+                ]
+              }
+            }
+          ],
+          "name": "Bathroom_Location"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "sunday"
+              }
+            },
+            {
+              "name": {
+                "value": "saturday"
+              }
+            },
+            {
+              "name": {
+                "value": "friday"
+              }
+            },
+            {
+              "name": {
+                "value": "thursday"
+              }
+            },
+            {
+              "name": {
+                "value": "wednesday"
+              }
+            },
+            {
+              "name": {
+                "value": "tuesday"
+              }
+            },
+            {
+              "name": {
+                "value": "monday"
+              }
+            },
+            {
+              "name": {
+                "value": "yesterday"
+              }
+            },
+            {
+              "name": {
+                "value": "tomorrow"
+              }
+            },
+            {
+              "name": {
+                "value": "today"
+              }
+            }
+          ],
+          "name": "Day_of_Week"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "need more"
+              }
+            },
+            {
+              "name": {
+                "value": "dry"
+              }
+            },
+            {
+              "name": {
+                "value": "done",
+                "synonyms": [
+                  "finished"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "reorder",
+                "synonyms": [
+                  "order more"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "refill",
+                "synonyms": [
+                  "refill medication",
+                  "medication refilled",
+                  "prescription refilled",
+                  "refill prescription",
+                  "refilled"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "empty",
+                "synonyms": [
+                  "finished",
+                  "over",
+                  "complete",
+                  "done",
+                  "out"
+                ]
+              }
+            }
+          ],
+          "name": "Medication_State"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "in bed"
+              }
+            },
+            {
+              "name": {
+                "value": "condo"
+              }
+            },
+            {
+              "name": {
+                "value": "house"
+              }
+            },
+            {
+              "name": {
+                "value": "suite"
+              }
+            },
+            {
+              "name": {
+                "value": "room"
+              }
+            },
+            {
+              "name": {
+                "value": "apartment"
+              }
+            },
+            {
+              "name": {
+                "value": "home"
+              }
+            }
+          ],
+          "name": "zzHome_Name_Delete"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "agony",
+                "synonyms": [
+                  "suffering",
+                  "excruciating",
+                  "agonizing"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "hurt",
+                "synonyms": [
+                  "hurts",
+                  "hurting"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "pain",
+                "synonyms": [
+                  "pains",
+                  "physical pain",
+                  "agony",
+                  "to the pain",
+                  "my pain",
+                  "in pain",
+                  "painful"
+                ]
+              }
+            }
+          ],
+          "name": "Pain_Type"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "need a friend"
+              }
+            },
+            {
+              "name": {
+                "value": "need company",
+                "synonyms": [
+                  "need some company",
+                  "need companionship",
+                  "like some company",
+                  "want company"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "looking for something to do",
+                "synonyms": [
+                  "nothing to do",
+                  "need something to do",
+                  "want something to do"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "day is boring",
+                "synonyms": [
+                  "boring day",
+                  "today is boring"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "sad"
+              }
+            },
+            {
+              "name": {
+                "value": "alone",
+                "synonyms": [
+                  "lonely",
+                  "all by myself"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "disinterested"
+              }
+            },
+            {
+              "name": {
+                "value": "bored"
+              }
+            },
+            {
+              "name": {
+                "value": "nothing to do",
+                "synonyms": [
+                  "can\u0027t find anything to do",
+                  "no thing to do"
+                ]
+              }
+            }
+          ],
+          "name": "Bored_State"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "nowhere to be found"
+              }
+            },
+            {
+              "name": {
+                "value": "misplaced"
+              }
+            },
+            {
+              "name": {
+                "value": "vanished"
+              }
+            },
+            {
+              "name": {
+                "value": "disappeared"
+              }
+            },
+            {
+              "name": {
+                "value": "stolen"
+              }
+            },
+            {
+              "name": {
+                "value": "gone"
+              }
+            },
+            {
+              "name": {
+                "value": "lost"
+              }
+            },
+            {
+              "name": {
+                "value": "missing",
+                "synonyms": [
+                  "vanished"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "can\u0027t find",
+                "synonyms": [
+                  "can not find",
+                  "cannot find"
+                ]
+              }
+            }
+          ],
+          "name": "Lost_State"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "gasping",
+                "synonyms": [
+                  "gasping for breath"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "choking",
+                "synonyms": [
+                  "suffocating",
+                  "suffocate",
+                  "choked",
+                  "choke"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "catch my breath",
+                "synonyms": [
+                  "can\u0027t catch my breath",
+                  "trouble catching my breathe",
+                  "can\u0027t catch air",
+                  "catch my breathe"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "inhale",
+                "synonyms": [
+                  "trouble inhaling",
+                  "can not inhale",
+                  "can\u0027t inahle",
+                  "inhaling"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "breathe",
+                "synonyms": [
+                  "no breath",
+                  "no breathe",
+                  "can not breathe",
+                  "cannot breathe",
+                  "can\u0027t breathe",
+                  "breathe air",
+                  "breathe out",
+                  "breath in",
+                  "breathe in",
+                  "breathing"
+                ]
+              }
+            }
+          ],
+          "name": "Breathing_Issue"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "bloodwork",
+                "synonyms": [
+                  "blood work"
+                ]
+              }
+            }
+          ],
+          "name": "Care_Type"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Tuck Shop",
+                "synonyms": [
+                  "tuck shop",
+                  "truck shop",
+                  "corner store",
+                  "tuck shoppe"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "pharmacy",
+                "synonyms": [
+                  "dwayne reads",
+                  "dwayne read",
+                  "duane reads",
+                  "drugstores",
+                  "drug stores",
+                  "pharmacies",
+                  "dispensary",
+                  "drug store",
+                  "drugstore",
+                  "apothecary",
+                  "duane reade",
+                  "duane read"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "bus",
+                "synonyms": [
+                  "bus stations",
+                  "buses",
+                  "greyhound",
+                  "grey hound",
+                  "bus station"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Train",
+                "synonyms": [
+                  "metros",
+                  "subway stations",
+                  "sub stations",
+                  "train stations",
+                  "subways",
+                  "trains",
+                  "subway station",
+                  "railway station",
+                  "railway",
+                  "rail station",
+                  "metro station",
+                  "train station",
+                  "sub station",
+                  "substation",
+                  "subway station",
+                  "sub way",
+                  "subway",
+                  "rail",
+                  "metro"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Virtual Visit",
+                "synonyms": [
+                  "virtual visits"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Therapy Room",
+                "synonyms": [
+                  "therapy rooms"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Coffee Shop",
+                "synonyms": [
+                  "java houses",
+                  "java shops",
+                  "tea rooms",
+                  "tea houses",
+                  "java shops",
+                  "coffee bars",
+                  "star bucks",
+                  "star buck",
+                  "coffee houses",
+                  "coffee shops",
+                  "starbucks",
+                  "coffeehouse",
+                  "tearoom",
+                  "tea room",
+                  "tea house",
+                  "java shop",
+                  "coffee bar",
+                  "coffee house"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Bar",
+                "synonyms": [
+                  "canteens",
+                  "saloons",
+                  "bars",
+                  "canteen",
+                  "Saloon"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Dining Room",
+                "synonyms": [
+                  "bistro",
+                  "retaurants",
+                  "diners",
+                  "cafes",
+                  "diners",
+                  "eateries",
+                  "cafeterias",
+                  "dining rooms",
+                  "café",
+                  "mess hall",
+                  "cafeteria",
+                  "eatery",
+                  "cafe",
+                  "diner",
+                  "dining parlor",
+                  "Restaurant"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Theater",
+                "synonyms": [
+                  "motion pictures",
+                  "motion picture",
+                  "picture show",
+                  "silver screen",
+                  "moving pictures",
+                  "moving picture",
+                  "cinema",
+                  "movie theater",
+                  "theatre room",
+                  "theater room",
+                  "theatre"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Salon",
+                "synonyms": [
+                  "masseuse",
+                  "massage",
+                  "Massage Parlor",
+                  "Hair Salon",
+                  "Nail Salon",
+                  "Beauty Parlor",
+                  "Parlor",
+                  "Beauty Salon"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Gym",
+                "synonyms": [
+                  "workout center",
+                  "workout room",
+                  "gymnasium",
+                  "Recreation Center",
+                  "Rec Center"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Community",
+                "synonyms": [
+                  "Sunrise East Fifty Six",
+                  "Sunrise",
+                  "East Fifty Six",
+                  "this place",
+                  "here",
+                  "Residence",
+                  "Residents"
+                ]
+              }
+            }
+          ],
+          "name": "Contact_Location"
+        },
+        {
+          "values": [
+            {
+              "id": "CATEGORY_STARTER",
+              "name": {
+                "value": "starter",
+                "synonyms": [
+                  "hors d\u0027oeuvre",
+                  "hors d\u0027oeuvres",
+                  "starters",
+                  "appetizers",
+                  "appetizer"
+                ]
+              }
+            },
+            {
+              "id": "CATEGORY_DESSERT",
+              "name": {
+                "value": "dessert",
+                "synonyms": [
+                  "peanut butter cookie",
+                  "chocolate brownie",
+                  "brownie",
+                  "custard pie",
+                  "baked apple",
+                  "cherry pie",
+                  "blueberry pie",
+                  "apple pie",
+                  "banana pie",
+                  "pecan pie",
+                  "pumpkin pie",
+                  "baked alaska",
+                  "pies",
+                  "pie",
+                  "chocolate cake",
+                  "chocolat moose",
+                  "chocolate mousse",
+                  "cannoli",
+                  "cheesecakes",
+                  "cheesecake",
+                  "cheese cakes",
+                  "cheese cake",
+                  "cakes",
+                  "cake",
+                  "lemon tart",
+                  "strawberry tart",
+                  "raspberry tart",
+                  "egg custard tart",
+                  "custard tart",
+                  "baked custard",
+                  "coconut bar",
+                  "baklaba",
+                  "baklava",
+                  "pudding",
+                  "tarts",
+                  "tart",
+                  "desserts",
+                  "banana fosters",
+                  "banana foster"
+                ]
+              }
+            },
+            {
+              "id": "CATEGORY_COLD_SANDWICH",
+              "name": {
+                "value": "cold sandwich",
+                "synonyms": [
+                  "cold sandwiches",
+                  "cold cuts"
+                ]
+              }
+            },
+            {
+              "id": "CATEGORY_HOT_SANDWICH",
+              "name": {
+                "value": "hot sandwich",
+                "synonyms": [
+                  "paninis",
+                  "panini",
+                  "hot sandwiches"
+                ]
+              }
+            },
+            {
+              "id": "CATEGORY_ASIAN_ENTREE",
+              "name": {
+                "value": "asian entree",
+                "synonyms": [
+                  "asian antrees"
+                ]
+              }
+            },
+            {
+              "id": "CATEGORY_BURGER",
+              "name": {
+                "value": "burger",
+                "synonyms": [
+                  "burgers"
+                ]
+              }
+            },
+            {
+              "id": "CATEGORY_SALAD",
+              "name": {
+                "value": "salad",
+                "synonyms": [
+                  "wedge salad",
+                  "chopped salad",
+                  "chop salad",
+                  "kale salad",
+                  "caesar salad",
+                  "salads",
+                  "salads"
+                ]
+              }
+            },
+            {
+              "id": "CATEGORY_PIZZA",
+              "name": {
+                "value": "pizza",
+                "synonyms": [
+                  "pizza pie",
+                  "pizzas"
+                ]
+              }
+            },
+            {
+              "id": "CATEGORY_PASTA",
+              "name": {
+                "value": "pasta",
+                "synonyms": [
+                  "ziti",
+                  "vermicelli pasta",
+                  "vermicelli",
+                  "tortellini",
+                  "spaghetti pasta",
+                  "spaghetti",
+                  "rotini pasta",
+                  "rotini",
+                  "rotelle pasta",
+                  "rotelle",
+                  "ravioli",
+                  "penne pasta",
+                  "penne",
+                  "orecchiette",
+                  "macaroni",
+                  "lasagna",
+                  "gnocci",
+                  "fusilli",
+                  "fettuchine pasta",
+                  "fettuccine",
+                  "noodles",
+                  "egg noodles",
+                  "ditalini",
+                  "bow tie pasta",
+                  "angel hair",
+                  "pastas"
+                ]
+              }
+            },
+            {
+              "id": "CATEGORY_CEREAL",
+              "name": {
+                "value": "cereal"
+              }
+            },
+            {
+              "id": "CATEGORY_RICE",
+              "name": {
+                "value": "rice"
+              }
+            },
+            {
+              "id": "CATEGORY_BEEF",
+              "name": {
+                "value": "beef"
+              }
+            },
+            {
+              "id": "CATEGORY_SEAFOOD",
+              "name": {
+                "value": "seafood",
+                "synonyms": [
+                  "seafoods"
+                ]
+              }
+            },
+            {
+              "id": "CATEGORY_WRAP",
+              "name": {
+                "value": "wrap",
+                "synonyms": [
+                  "wraps"
+                ]
+              }
+            },
+            {
+              "id": "CATEGORY_PORK",
+              "name": {
+                "value": "pork",
+                "synonyms": [
+                  "sausage",
+                  "pork tenderloin",
+                  "pork steak",
+                  "pork shoulder",
+                  "pork ribs",
+                  "pork rib roast",
+                  "pork loin roast",
+                  "pork chops",
+                  "pork belly",
+                  "ham",
+                  "porks",
+                  "ground pork"
+                ]
+              }
+            },
+            {
+              "id": "CATEGORY_POULTRY",
+              "name": {
+                "value": "poultry",
+                "synonyms": [
+                  "fowl",
+                  "goose",
+                  "duck",
+                  "turkey",
+                  "chickens",
+                  "chicken"
+                ]
+              }
+            },
+            {
+              "id": "CATEGORY_FRUIT",
+              "name": {
+                "value": "fruit",
+                "synonyms": [
+                  "fuits"
+                ]
+              }
+            },
+            {
+              "id": "CATEGORY_BREAD",
+              "name": {
+                "value": "bread",
+                "synonyms": [
+                  "breads"
+                ]
+              }
+            },
+            {
+              "id": "CATEGORY_VEGETABLE",
+              "name": {
+                "value": "vegetable",
+                "synonyms": [
+                  "veggies",
+                  "veggie",
+                  "vegetables"
+                ]
+              }
+            },
+            {
+              "id": "CATEGORY_SNACK",
+              "name": {
+                "value": "snack",
+                "synonyms": [
+                  "munchy",
+                  "munchies",
+                  "a snack",
+                  "snacks"
+                ]
+              }
+            },
+            {
+              "id": "CATEGORY_SOUP",
+              "name": {
+                "value": "soup",
+                "synonyms": [
+                  "stews",
+                  "stew",
+                  "soups"
+                ]
+              }
+            },
+            {
+              "id": "CATEGORY_BEVERAGE",
+              "name": {
+                "value": "beverage",
+                "synonyms": [
+                  "drinks",
+                  "drink",
+                  "beverages"
+                ]
+              }
+            },
+            {
+              "id": "CATEGORY_SIDE",
+              "name": {
+                "value": "side",
+                "synonyms": [
+                  "science",
+                  "sides"
+                ]
+              }
+            },
+            {
+              "id": "CATEGORY_MAIN",
+              "name": {
+                "value": "main",
+                "synonyms": [
+                  "main course"
+                ]
+              }
+            },
+            {
+              "id": "CATEGORY_SANDWICH",
+              "name": {
+                "value": "sandwich",
+                "synonyms": [
+                  "sandwiches"
+                ]
+              }
+            },
+            {
+              "id": "CATEGORY_ENTREE",
+              "name": {
+                "value": "entree",
+                "synonyms": [
+                  "entries",
+                  "entrees"
+                ]
+              }
+            }
+          ],
+          "name": "Menu_Item"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "soft diet"
+              }
+            },
+            {
+              "name": {
+                "value": "weight watchers"
+              }
+            },
+            {
+              "name": {
+                "value": "kosher"
+              }
+            },
+            {
+              "name": {
+                "value": "keto"
+              }
+            },
+            {
+              "name": {
+                "value": "paleo"
+              }
+            },
+            {
+              "name": {
+                "value": "no carb",
+                "synonyms": [
+                  "zero carbs",
+                  "no carbs",
+                  "zero carb"
+                ]
+              }
+            },
+            {
+              "id": "VEGAN",
+              "name": {
+                "value": "vegan"
+              }
+            },
+            {
+              "id": "HEALTHY",
+              "name": {
+                "value": "healthy",
+                "synonyms": [
+                  "low fat",
+                  "fat free",
+                  "low calorie"
+                ]
+              }
+            },
+            {
+              "id": "GLUTEN_FREE",
+              "name": {
+                "value": "gluten free",
+                "synonyms": [
+                  "wheat free",
+                  "no gluten"
+                ]
+              }
+            },
+            {
+              "id": "VEGETARIAN",
+              "name": {
+                "value": "vegetarian",
+                "synonyms": [
+                  "vegetarians"
+                ]
+              }
+            }
+          ],
+          "name": "Menu_Item_Type"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "featured",
+                "synonyms": [
+                  "specials",
+                  "daily specials",
+                  "special of the day",
+                  "daily special",
+                  "of the day"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "seasonal",
+                "synonyms": [
+                  "season"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "chef special",
+                "synonyms": [
+                  "chef specials",
+                  "chef\u0027s special",
+                  "chef\u0027s specials",
+                  "chefs specials"
+                ]
+              }
+            }
+          ],
+          "name": "Menu_Type"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "chef special"
+              }
+            }
+          ],
+          "name": "Chef_Special"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "cafe"
+              }
+            },
+            {
+              "name": {
+                "value": "restaurant"
+              }
+            },
+            {
+              "name": {
+                "value": "meal area"
+              }
+            },
+            {
+              "name": {
+                "value": "dining room"
+              }
+            }
+          ],
+          "name": "SeniorLivingPlace"
+        }
+      ]
+    },
+    "_nameFreeInteraction": {
+      "ingressPoints": [
+        {
+          "type": "LAUNCH",
+          "sampleUtterances": [
+            {
+              "format": "RAW_TEXT",
+              "value": "what is on the calendar"
+            },
+            {
+              "format": "RAW_TEXT",
+              "value": "what is happening today"
+            },
+            {
+              "format": "RAW_TEXT",
+              "value": "what is for lunch"
+            },
+            {
+              "format": "RAW_TEXT",
+              "value": "what is for dinner"
+            },
+            {
+              "format": "RAW_TEXT",
+              "value": "i need help to the bathroom"
+            }
+          ]
+        },
+        {
+          "name": "BloodPressureIntent",
+          "type": "INTENT"
+        },
+        {
+          "name": "HelpFallIntent",
+          "type": "INTENT"
+        },
+        {
+          "name": "HelpGeneralIntent",
+          "type": "INTENT"
+        },
+        {
+          "name": "MaintenanceIntent",
+          "type": "INTENT"
+        },
+        {
+          "name": "MedicationIntent",
+          "type": "INTENT"
+        },
+        {
+          "name": "MobilityIntent",
+          "type": "INTENT"
+        },
+        {
+          "name": "PainIntent",
+          "type": "INTENT"
+        },
+        {
+          "name": "RoomServiceIntent",
+          "type": "INTENT"
+        },
+        {
+          "name": "TalkIntent",
+          "type": "INTENT"
+        },
+        {
+          "name": "ToiletingIntent",
+          "type": "INTENT"
+        },
+        {
+          "name": "CalendarEventInfoIntent",
+          "type": "INTENT"
+        },
+        {
+          "name": "MenuInfoIntent",
+          "type": "INTENT"
+        },
+        {
+          "name": "ServicesIntent",
+          "type": "INTENT"
+        },
+        {
+          "name": "StartMyDayIntent",
+          "type": "INTENT"
+        }
+      ]
+    }
+  },
+  "version": "23"
+}

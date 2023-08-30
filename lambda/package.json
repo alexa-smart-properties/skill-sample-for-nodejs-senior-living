@@ -1,0 +1,20 @@
+{
+  "name": "@amzn/asp-senior-living-demo-skill",
+  "version": "1.1.0",
+  "description": "Demo skill for Senior Living properties",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amazon Alexa",
+  "license": "LicenseRef-.amazon.com.-AmznSL-1.0",
+  "dependencies": {
+    "ask-sdk": "^2.12.1",
+    "aws-sdk": "^2.1162.0",
+    "i18next": "^21.8.10",
+    "i18next-sprintf-postprocessor": "^0.2.2"
+  },
+  "devDependencies": {
+    "ask-sdk-local-debug": "^1.1.0"
+  }
+}

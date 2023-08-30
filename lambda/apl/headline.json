@@ -1,0 +1,42 @@
+{
+    "document": {
+        "type": "APL",
+        "version": "1.8",
+        "theme": "dark",
+        "import": [
+            {
+                "name": "alexa-layouts",
+                "version": "1.5.0"
+            }
+        ],
+        "mainTemplate": {
+            "parameters": [
+                "payload"
+            ],
+            "item": [
+                {
+                    "type": "AlexaHeadline",
+                    "id": "MainHeadline",
+                    "primaryText": "${payload.headlineTemplateData.text}",
+                    "secondaryText": "${payload.headlineTemplateData.sub}",
+                    "headerBackButton": false,
+                    "headerAttributionImage": "${payload.headlineTemplateData.logoUrl}",
+                    "headerAttributionPrimacy": true,
+                    "footerHintText": "${payload.headlineTemplateData.hintText}",
+                    "backgroundImageSource": "${payload.headlineTemplateData.backgroundImage}",
+                    "backgroundColorOverlay": true
+                }
+            ]
+        }
+    },
+    "datasources": {
+        "headlineTemplateData": {
+            "backgroundImage": "https://d2o906d8ln7ui1.cloudfront.net/images/templates_v3/headline/HeadlineBackground_Dark.png",
+            "text": "Welcome to the \nAlexa Smart Properties Hotel",
+            "sub": " ",
+            "logoUrl": "https://d2o906d8ln7ui1.cloudfront.net/images/templates_v3/logo/logo-modern-botanical-white.png",
+            "hintText": "Try, \"Alexa, where is the pool?\""
+        }
+    },
+    "sources": {}
+}
