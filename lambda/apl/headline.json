@@ -32,7 +32,7 @@
     "datasources": {
         "headlineTemplateData": {
             "backgroundImage": "https://d2o906d8ln7ui1.cloudfront.net/images/templates_v3/headline/HeadlineBackground_Dark.png",
-            "text": "Welcome to the \nAlexa Smart Properties Senior Living Facility",
+            "text": "Welcome to the \nAlexa Smart Properties Senior Living facility",
             "sub": " ",
             "logoUrl": "https://d2o906d8ln7ui1.cloudfront.net/images/templates_v3/logo/logo-modern-botanical-white.png",
             "hintText": "Try, \"Alexa, please ask staff to bring my medications\""
