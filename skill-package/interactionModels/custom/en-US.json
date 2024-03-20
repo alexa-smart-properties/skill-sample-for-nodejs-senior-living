@@ -141,12 +141,9 @@
             "there is {Maintenance_Issue}",
             "there is a {Maintenance_Issue}",
             "there are ants in the {Apartment_Location}",
-            "my {Apartment_Item} {Maintenance_Issue}",
-            "the {Apartment_Item} {Maintenance_Issue}",
             "the {Apartment_Item} is {Maintenance_Issue}",
             "the {Apartment_Item} doesn\u0027t work",
             "the {Apartment_Item} is not working",
-            "{Apartment_Item} {Maintenance_Issue}",
             "my {Apartment_Item} is not working",
             "my {Apartment_Item} doesn\u0027t work",
             "i want the {Apartment_Item} {Maintenance_Issue}",
@@ -173,7 +170,6 @@
             "I can\u0027t get my {Apartment_Item} working",
             "I can\u0027t get my {Apartment_Item} to work",
             "I need my {Apartment_Item} {Maintenance_Issue}",
-            "{Maintenance_Issue} {Apartment_Item}",
             "can\u0027t get my {Apartment_Item} {Maintenance_Issue}",
             "want a {Apartment_Item} {Maintenance_Issue} {Apartment_Location}",
             "need a {Apartment_Item} {Maintenance_Issue} {Apartment_Location}",
@@ -2021,20 +2017,6 @@
               }
             },
             {
-              "id": "lights",
-              "name": {
-                "value": "lights",
-                "synonyms": [
-                  "light bulbs",
-                  "bulb",
-                  "light bulb",
-                  "light",
-                  "lamp",
-                  "lamps"
-                ]
-              }
-            },
-            {
               "id": "hvac",
               "name": {
                 "value": "air conditioning",
@@ -2454,12 +2436,6 @@
               }
             },
             {
-              "id": "ceilinglight",
-              "name": {
-                "value": "ceiling light"
-              }
-            },
-            {
               "id": "backsplash",
               "name": {
                 "value": "backsplash"
@@ -2544,24 +2520,6 @@
               "id": "cable",
               "name": {
                 "value": "cable"
-              }
-            },
-            {
-              "id": "directtv",
-              "name": {
-                "value": "direct t. v."
-              }
-            },
-            {
-              "id": "netflix",
-              "name": {
-                "value": "netflix"
-              }
-            },
-            {
-              "id": "hulu",
-              "name": {
-                "value": "hulu"
               }
             }
           ],
