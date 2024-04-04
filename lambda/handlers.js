@@ -46,7 +46,7 @@ module.exports = {
                     datasources: {
                         "headlineTemplateData": {
                             "backgroundImage": util.getS3PreSignedUrl(constants.IMAGES.LOBBY),
-                            "text": "Welcome to Shady Pines.",
+                            "text": "Welcome to Senior Living Smart Property demo skill.",
                             "sub": " ",
                             "logoUrl": "",
                             "hintText": "Try, \"Alexa, start my day.\""
@@ -149,7 +149,7 @@ module.exports = {
                     datasources: {
                         "headlineTemplateData": {
                             "backgroundImage": util.getS3PreSignedUrl(constants.IMAGES.LOBBY),
-                            "text": "Welcome to Shady Pines.",
+                            "text": "Welcome to Senior Living Smart Property demo skill.",
                             "sub": " ",
                             "logoUrl": "",
                             "hintText": "Try, \"Alexa, start my day.\""
@@ -201,7 +201,7 @@ module.exports = {
                     datasources: {
                         "headlineTemplateData": {
                             "backgroundImage": util.getS3PreSignedUrl(constants.IMAGES.LOBBY),
-                            "text": "Welcome to Shady Pines.",
+                            "text": "Welcome to Senior Living Smart Property demo skill.",
                             "sub": " ",
                             "logoUrl": "",
                             "hintText": "Try, \"Alexa, start my day.\""
