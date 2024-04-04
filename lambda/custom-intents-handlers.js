@@ -32,7 +32,7 @@ function handleInfoRequest(handlerInput, intentName, outputPromptName) {
             datasources: {
                 "headlineTemplateData": {
                     "backgroundImage": util.getS3PreSignedUrl(constants.IMAGES.LOBBY),
-                    "text": "Welcome to Shady Pines.",
+                    "text": "Welcome to Senior Living Smart Property demo skill.",
                     "sub": " ",
                     "logoUrl": "",
                     "hintText": "Try, \"Alexa, start my day.\""
@@ -269,7 +269,7 @@ module.exports = {
                     datasources: {
                         "headlineTemplateData": {
                             "backgroundImage": util.getS3PreSignedUrl(constants.IMAGES.LOBBY),
-                            "text": "Welcome to Shady Pines.",
+                            "text": "Welcome to Senior Living Smart Property demo skill.",
                             "sub": " ",
                             "logoUrl": "",
                             "hintText": "Try, \"Alexa, start my day.\""
@@ -392,7 +392,7 @@ module.exports = {
                     datasources: {
                         "headlineTemplateData": {
                             "backgroundImage": util.getS3PreSignedUrl(constants.IMAGES.ACTIVITY),
-                            "text": "There is a lot you can do at Shady Pines.",
+                            "text": "There is a lot you can do at Senior Living Smart Property demo skill.",
                             "sub": " ",
                             "logoUrl": "",
                             "hintText": "Try, \"Alexa, give me the news.\""
@@ -528,7 +528,7 @@ module.exports = {
                     datasources: {
                         "headlineTemplateData": {
                             "backgroundImage": util.getS3PreSignedUrl(constants.IMAGES.LOBBY),
-                            "text": "Welcome to Shady Pines.",
+                            "text": "Welcome to Senior Living Smart Property demo skill.",
                             "sub": " ",
                             "logoUrl": "",
                             "hintText": "Try, \"Alexa, start my day.\""
