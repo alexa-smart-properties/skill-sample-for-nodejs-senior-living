@@ -21,11 +21,12 @@ If you intend to use this sample skill as a template to build your own property 
 
 ### Prerequisites:
 1. Configure ASK_CLI: https://developer.amazon.com/en-US/docs/alexa/smapi/quick-start-alexa-skills-kit-command-line-interface.html
-2. Create amazon developer account and AWS account. 
-3. Verify ask and aws profiles:
+2. Create amazon developer account and AWS account.
+3. Clone the sample skill to local workspace.
+4. Verify ask and aws profiles:
     cat ~/.ask/cli_config 
     cat ~/.aws/credentials
-4. Verify vendor account access by listing skills available for the ask profile:
+5. Verify vendor account access by listing skills available for the ask profile:
    
        ask smapi list-skills-for-vendor [-p <ask_profile>]
     
