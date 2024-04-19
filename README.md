@@ -26,7 +26,8 @@ If you intend to use this sample skill as a template to build your own property 
     cat ~/.ask/cli_config 
     cat ~/.aws/credentials
 4. Verify vendor account access by listing skills available for the ask profile:
-    ask smapi list-skills-for-vendor -p [ask_profile]
+   
+       ask smapi list-skills-for-vendor [-p <ask_profile>]
     
  
 ### Step 1: Create skill
@@ -37,7 +38,7 @@ Create a blank, custom Alexa skill using either the [skill console](https://deve
 > Project for skill "<skill_name>" is successfully created at </path>
 > Project initialized with deploy delegate "@ask-cli/lambda-deployer" successfully.
 
-    ask new  [-p <ask_profile>]
+    ask new [-p <ask_profile>]
 
 > Choose a modeling stack for your skill:  Interaction Model
 > Choose the programming language you will use to code your skill:  NodeJS
@@ -60,11 +61,13 @@ Use [ASK CLI commands](https://developer.amazon.com/en-US/docs/alexa/smapi/ask-c
 > By the end of this Step, you would have a skill Name Free Interaction(NFI) enabled.
 
 Download the skill mainfest file usign below command:
+    
     ask smapi get-skill-manifest -s <skill_id> manifest.json [-p <ask_profile>]
 
 Follow steps metioned on this link to updatet the manifest file: https://developer.amazon.com/en-US/docs/alexa/alexa-smart-properties/name-free-interaction.html#update-manifest
   
 Upload the updated skill mainfest file usign below command:
+    
     ask smapi update-skill-manifest -g development -s <skill_id> --manifest "$(cat manifest.json)" [-p <ask_profile>]
 
 
