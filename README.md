@@ -79,7 +79,7 @@ Upload the updated skill mainfest file usign below command:
 3. Create s3 bucket and Dynamo DB table on AWS and provide respective details in config.js file under your lambda funtion:
     TABLE_NAME: <dynamoDB_table_name>
     S3_BUCKET: <s3_bucket_name>
-5. Smaple skill has session persistence built in that is optional.
+5. Sample skill has session persistence built in that is optional.
 6. Provide lambda execution roles for Dynamo DB and s3 permissions.
 
 ### Step 5: Deploy updated skill code
@@ -88,7 +88,7 @@ Use ASK CLI to perform deployment. If set up correctly, it should publish both t
 
     ask deploy [-p <ask_profile>]
 
-### Step 6: Test the deployed skill under your developer portal account
+### Step 6: Test the deployed skill under your developer portal account.
 
 ### Step 7: Afterwards, you can start customizing the skill!
 
