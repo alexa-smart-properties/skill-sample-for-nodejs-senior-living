@@ -65,7 +65,7 @@ Download the skill mainfest file usign below command:
     
     ask smapi get-skill-manifest -s <skill_id> manifest.json [-p <ask_profile>]
 
-Follow steps metioned on this link to updatet the manifest file: https://developer.amazon.com/en-US/docs/alexa/alexa-smart-properties/name-free-interaction.html#update-manifest
+Follow steps metioned on this link to update the manifest file: https://developer.amazon.com/en-US/docs/alexa/alexa-smart-properties/name-free-interaction.html#update-manifest
   
 Upload the updated skill mainfest file usign below command:
     
